@@ -1,13 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import './components/Navbar'
+import NavBarComponent from './components/Navbar';
+import BannerComponent from './components/BannerComponent';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div>
+      <NavBarComponent/>
+      <BannerComponent/>
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          This is going to be the Sagret Gardens Catalogue site
         </p>
         <a
           className="App-link"
@@ -17,7 +23,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
     </div>
   );
 }
