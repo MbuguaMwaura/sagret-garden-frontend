@@ -9,6 +9,7 @@
   letter-spacing: normal;
   text-align: left;
   color: #2a4c46;
+  background-color: #ffffff;
 }
 
 .contain {
@@ -135,4 +136,54 @@
   .hidden_on_small{
     display: none;
   }
+}
+
+.top-spacer {
+  height: 50vh;
+}
+
+.bottom-spacer {
+  height: 110vh;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.header_link {
+  margin: 10px;
+  color: #314d4a;
+  font-weight: bold;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  outline: none;
+}
+.book_btn {
+  padding: 6px 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #314d4a;
+  cursor: pointer;
+  outline: none;
+  border-radius: 2px;
+}
+
+.selected {
+  border-bottom: 3px solid #11bb9a;
+  color: #11bb9a;
+}
+
+.section {
+  height: 40vh;
 }

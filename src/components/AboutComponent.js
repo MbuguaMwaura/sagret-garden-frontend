@@ -4,7 +4,7 @@ import './navbar.css'
 import { Row, Col } from 'react-bootstrap'
 
 class AboutComponent extends Component {
-    // style={{display:"flex",padding:"20px 50px",gap:"30px"}}
+
     render() {
         return (
             <>
@@ -24,7 +24,7 @@ class AboutComponent extends Component {
                     <Col className="col-sm-6 col-12">
                         <Row>
                             <Col className="col-12">
-                                <p style={{ fontFamily: "Nunito", color: "#FFFFFF", fontSize: "12px" }}>
+                                <p style={{ fontFamily: "Nunito", color: "#FFFFFF", fontSize: "12px" ,textAlign:"initial"}}>
                                     Sagret gardens is a beautiful botanical garden located on  Kiambu Road. It is made up of 4 cascading
                                     gardens each surrounded by lush diverse flora.
                                     This picturesque haven is the perfect
@@ -49,10 +49,10 @@ class AboutComponent extends Component {
                     </Col>
 
                     <Col style={{ paddingTop: "150px" }} className="col-lg-6 col-12">
-                        <p style={{ fontFamily: "Optima", color: "#1c6a5c", fontSize: "20px", fontWeight: "bold" }}>
+                        <p style={{ fontFamily: "Optima", color: "#1c6a5c", fontSize: "20px", fontWeight: "bold",textAlign:"initial" }}>
                             Our Gardens
                         </p>
-                        <p style={{ fontFamily: "Nunito", color: "#2a4c46", fontSize: "12px"}}>
+                        <p style={{ fontFamily: "Nunito", color: "#2a4c46", fontSize: "12px",textAlign:"initial"}}>
                             Sagret gardens is a beautiful botanical garden located on  Kiambu Road. It is made up of 4 cascading gardens each surrounded by lush diverse flora. This picturesque haven is the perfect venue to host everything from small intimate picnics to extravagant events.
                             <br/><br/>
                             Sagret gardens is a beautiful botanical garden located on  Kiambu Road. It is made up of 4 cascading gardens each surrounded

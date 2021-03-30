@@ -14,7 +14,7 @@ class AmenitiesComponent extends Component {
                 <div className="about_us_container padding"></div>
                 <div className="negative_height" style={{ padding: "0 20vw" }}  >
 
-                    <Row>
+                    <Row style={{textAlign:"initial"}}>
 
                         <Col className="col-sm-6 col-12">
                             <Row>
@@ -36,7 +36,7 @@ class AmenitiesComponent extends Component {
                             </Row>
 
                         </Col>
-                        <Col className="col-sm-6 col-12">
+                        <Col className="col-sm-6 col-12" >
                             <p style={{ fontFamily: "Optima", color: "#FFFFFF", fontSize: "20px", fontWeight: "bold" ,maxWidth:"200px"}}>
                                 The Sagret Garden
                                 Amenities

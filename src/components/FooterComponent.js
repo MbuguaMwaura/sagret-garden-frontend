@@ -28,7 +28,7 @@ class BannerComponent extends Component {
 
                     <div style={{ padding: "2vw 10vw" }}>
 
-                        <Row>
+                        <Row style={{textAlign:"initial"}}>
                             <Col className="col-md-6 col-12">
                                 <p style={{ fontFamily: "Optima", color: "#ffffff", fontSize: "16px" }}>
                                     Contact info

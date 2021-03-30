@@ -94,10 +94,10 @@ export default () => {
                     <div style={{ marginTop: "60px" }} >
 
                     
-                    <p style={{ fontFamily: "Optima", color: "#1c6a5c", fontSize: "30px", fontWeight: "bold" }}>
+                    <p style={{ fontFamily: "Optima", color: "#1c6a5c", fontSize: "30px", fontWeight: "bold",textAlign:"initial" }}>
                         Sagret Gardens
                     </p>
-                    <p style={{ fontFamily: "Nunito", color: "#1c6a5c", fontSize: "14px", fontWeight: "bold", maxWidth: "300px" }}>
+                    <p style={{ fontFamily: "Nunito", color: "#1c6a5c", fontSize: "14px", fontWeight: "bold", maxWidth: "300px" ,textAlign:"initial"}}>
                         This is the most intimate garden with a capacity of up to 60 people. It is hired out at Ksh. 16,000 per day.
                     </p>
                     <p className="explore_button" style={{backgroundColor: "#2a4c46",padding: "8px 35px",fontSize:"14px"}}>Book Now</p>

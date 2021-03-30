@@ -12,7 +12,7 @@ class GardenLayoutComponent extends Component {
                     <Col className="col-sm-7 col-12">
                         <Image src="garden_layout.jpeg" style={{ width: "inherit" }} />
                     </Col>
-                    <Col className="col-sm-4 col-12">
+                    <Col className="col-sm-4 col-12" style={{textAlign:"initial"}}>
                         <p style={{ fontFamily: "Optima", color: "#1c6a5c", fontSize: "30px", fontWeight: "bold" }}>
                             Garden Layout
                         </p>

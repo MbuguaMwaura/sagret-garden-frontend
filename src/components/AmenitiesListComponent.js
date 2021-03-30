@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Image from 'react-bootstrap/Image'
 import './navbar.css'
-import { Row, Col } from 'react-bootstrap'
 import amenties from '../data/amenities'
 
 class AmentiesListComponent extends Component {
