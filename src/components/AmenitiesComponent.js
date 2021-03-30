@@ -46,7 +46,7 @@ class AmenitiesComponent extends Component {
 
                     <Row>
        
-                        <Col style={{ paddingTop: "150px" }} className="col-lg-6 col-12">
+                        <Col style={{ paddingTop: "140px", paddingBottom:"20px" }} className="col-lg-6 col-12">
                           <AmentiesListComponent/>
 
                         </Col>
