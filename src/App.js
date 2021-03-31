@@ -8,8 +8,11 @@ import AmenitiesComponent from './components/AmenitiesComponent'
 import GalleryComponent from './components/GalleryComponent'
 import FooterComponent from './components/FooterComponent'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Image } from 'react-bootstrap'
+import { Image, Modal, Button } from 'react-bootstrap'
 import React, { useRef, useEffect, useState } from "react";
+import BookModal from './components/BookModal'
+
+
 
 const getDimensions = ele => {
   const { height } = ele.getBoundingClientRect();
@@ -23,15 +26,24 @@ const getDimensions = ele => {
   };
 };
 
+var toggleMobileMenu = false
+
 const scrollTo = ele => {
   ele.scrollIntoView({
     behavior: "smooth",
     block: "start",
   });
+  toggleMenu()
+  console.log(toggleMobileMenu)
 };
+const toggleMenu = () => {
+  console.log(toggleMobileMenu)
+  toggleMobileMenu = !toggleMobileMenu
+}
 
 function App() {
   const [visibleSection, setVisibleSection] = useState();
+  const [modalShow, setModalShow] = React.useState(false);
 
   const headerRef = useRef(null);
   const aboutUsRef = useRef(null);
@@ -45,6 +57,8 @@ function App() {
     { section: "OurGardens", ref: ourGardensRef },
     { section: "Amenities", ref: amenitiesRef }
   ];
+
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -78,7 +92,8 @@ function App() {
 
       <div className="content">
         <div className="sticky">
-          <div className="header" ref={headerRef}>
+          {/* Start of large Menu */}
+          <div className="large_menu header" ref={headerRef}>
             <button
               type="button"
               className={`header_link ${visibleSection === "About_Us" ? "selected" : ""} nav_style`}
@@ -99,7 +114,7 @@ function App() {
             </button>
             <Image onClick={() => {
               scrollTo(bannerRef.current);
-            }} src="sagret_garden_logo.png" style={{ height: "70px", margin: "0 100px" }} />
+            }} src="sagret_garden_logo.png" style={{ height: "70px", margin: "0 50px" }} />
 
             <button
               type="button"
@@ -113,14 +128,79 @@ function App() {
             <button
               type="button"
               className={`header_link nav_style book_btn`}
-              onClick={() => {
-                console.log("book now");
-              }}
+              onClick={() => setModalShow(true)}
             >
               BOOK NOW
             </button>
           </div>
+          {/* End of Large Menu */}
+
+          {/* Start of Mobile Menu */}
+
+          <div className="mobile_menu header_mobile" ref={headerRef} >
+            <div style={{ display: "flex", justifyContent: "space-between" }}>
+              <Image src="sagret_garden_logo.png" style={{ height: "70px", width: "70px", margin: "10px 20px" }} />
+
+              {!toggleMobileMenu ?
+                <Image onClick={() => {
+                  scrollTo(bannerRef.current);
+                }} src="humburger_menu.png" style={{ margin: "auto 20px" }} /> : <></>
+              }
+            </div>
+
+
+            {toggleMobileMenu ?
+
+              <>
+                <button
+                  style={{ width: "150px" }}
+                  type="button"
+                  className={`header_link ${visibleSection === "About_Us" ? "selected" : ""} nav_style`}
+                  onClick={() => {
+                    scrollTo(aboutUsRef.current);
+                  }}
+                >
+                  ABOUT US
+            </button>
+                <button
+                  style={{ width: "150px" }}
+                  type="button"
+                  className={`header_link ${visibleSection === "OurGardens" ? "selected" : ""} nav_style`}
+                  onClick={() => {
+                    scrollTo(ourGardensRef.current);
+                  }}
+                >
+                  OUR GARDENS
+            </button>
+
+
+                <button
+                  style={{ width: "150px" }}
+                  type="button"
+                  className={`header_link ${visibleSection === "Amenities" ? "selected" : ""} nav_style`}
+                  onClick={() => {
+                    scrollTo(amenitiesRef.current);
+                  }}
+                >
+                  AMENITIES
+            </button>
+                <button
+                  type="button"
+                  className={`header_link nav_style book_btn`}
+                  style={{ marginTop: "0px !important", textAlign: "center", width: "150px" }}
+                  onClick={() => setModalShow(true)}
+                >
+                  BOOK NOW
+            </button>
+              </> : <></>
+            }
+          </div>
+          {/* End of Mobile Menu */}
         </div>
+        <BookModal
+          show={modalShow}
+          onHide={() => setModalShow(false)}
+        />
         <div id="Banner" ref={bannerRef} >
           <BannerComponent />
         </div>
@@ -143,7 +223,7 @@ function App() {
         <FooterComponent />
       </div>
 
-   
+
     </div>
   );
 }
