@@ -53,12 +53,14 @@ function App() {
   const bannerRef = useRef(null);
   const ourGardensRef = useRef(null);
   const amenitiesRef = useRef(null);
+  const footerRef = useRef(null);
 
   const sectionRefs = [
     { section: "Banner", ref: bannerRef },
     { section: "About_Us", ref: aboutUsRef },
     { section: "OurGardens", ref: ourGardensRef },
-    { section: "Amenities", ref: amenitiesRef }
+    { section: "Amenities", ref: amenitiesRef },
+    { section: "Footer", ref : footerRef}
   ];
 
   const sendDataToParent = (message) => {
@@ -66,7 +68,7 @@ function App() {
     if (message === "success") {
       setModalShow(false)
       setSuccessModalShow(true)
-    }else if("hide"){
+    } else if ("hide") {
       setModalShow(false)
       setSuccessModalShow(false)
       formHasBeenValidated = false
@@ -145,7 +147,9 @@ function App() {
             <button
               type="button"
               className={`header_link nav_style book_btn`}
-              onClick={() => setModalShow(true)}
+              onClick={() => {
+                scrollTo(footerRef.current);
+              }}
             >
               BOOK NOW
             </button>
@@ -205,7 +209,9 @@ function App() {
                   type="button"
                   className={`header_link nav_style book_btn`}
                   style={{ marginTop: "0px !important", textAlign: "center", width: "150px" }}
-                  onClick={() => setModalShow(true)}
+                  onClick={() => {
+                    scrollTo(footerRef.current);
+                  }}
                 >
                   BOOK NOW
             </button>
@@ -218,7 +224,7 @@ function App() {
           show={modalShow}
           onHide={() => setModalShow(false)}
           sendDataToParent={sendDataToParent}
-         
+
         />
         <SuccessModal
           show={successModalShow}
@@ -233,10 +239,11 @@ function App() {
 
         </div>
 
+
         <div style={{ paddingTop: "35px" }} id="OurGardens" ref={ourGardensRef} >
-          <GardenLayoutComponent 
-           book={() => setModalShow(true)}
-           value="ew"
+          <GardenLayoutComponent
+            book={() => scrollTo(footerRef.current)}
+            value="ew"
           />
 
         </div>
@@ -247,7 +254,9 @@ function App() {
 
 
         <GalleryComponent />
-        <FooterComponent />
+        <div id="Footer" ref={footerRef} >
+          <FooterComponent />
+        </div>
       </div>
 
 
