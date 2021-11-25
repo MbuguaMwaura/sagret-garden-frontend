@@ -140,13 +140,14 @@
   .mobile_menu{
     display: flex !important;
   }
+  .hidden_on_small{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 992px) {
 
-  .hidden_on_small{
-    display: none;
-  }
+
 }
 
 .top-spacer {
@@ -216,4 +217,7 @@
   border-color: #2a4c46 !important;
   outline: 0;
   box-shadow: 0 0 0 0.1rem #2a4c46!important;
+}
+.form-group {
+  margin-bottom: unset !important;
 }

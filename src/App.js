@@ -12,7 +12,7 @@ import { Image, Modal, Button } from 'react-bootstrap'
 import React, { useRef, useEffect, useState } from "react";
 import BookModal from './components/BookModal'
 
-
+import SuccessModal from './components/SuccessModal'
 
 const getDimensions = ele => {
   const { height } = ele.getBoundingClientRect();
@@ -34,16 +34,19 @@ const scrollTo = ele => {
     block: "start",
   });
   toggleMenu()
-  console.log(toggleMobileMenu)
+
 };
 const toggleMenu = () => {
-  console.log(toggleMobileMenu)
+
   toggleMobileMenu = !toggleMobileMenu
 }
 
 function App() {
+
+  var formHasBeenValidated = false
   const [visibleSection, setVisibleSection] = useState();
   const [modalShow, setModalShow] = React.useState(false);
+  const [successModalShow, setSuccessModalShow] = React.useState(false);
 
   const headerRef = useRef(null);
   const aboutUsRef = useRef(null);
@@ -58,7 +61,21 @@ function App() {
     { section: "Amenities", ref: amenitiesRef }
   ];
 
+  const sendDataToParent = (message) => {
 
+    if (message === "success") {
+      setModalShow(false)
+      setSuccessModalShow(true)
+    }else if("hide"){
+      setModalShow(false)
+      setSuccessModalShow(false)
+      formHasBeenValidated = false
+    }
+  };
+
+  const validateForm = (validate) => {
+    return validate
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -200,6 +217,13 @@ function App() {
         <BookModal
           show={modalShow}
           onHide={() => setModalShow(false)}
+          sendDataToParent={sendDataToParent}
+         
+        />
+        <SuccessModal
+          show={successModalShow}
+          onHide={() => setSuccessModalShow(false)}
+          sendDataToParent={sendDataToParent}
         />
         <div id="Banner" ref={bannerRef} >
           <BannerComponent />
@@ -210,7 +234,10 @@ function App() {
         </div>
 
         <div style={{ paddingTop: "35px" }} id="OurGardens" ref={ourGardensRef} >
-          <GardenLayoutComponent />
+          <GardenLayoutComponent 
+           book={() => setModalShow(true)}
+           value="ew"
+          />
 
         </div>
         <div style={{ paddingTop: "35px" }} id="Amenities" ref={amenitiesRef} >

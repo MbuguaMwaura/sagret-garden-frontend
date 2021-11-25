@@ -4,7 +4,9 @@ import './navbar.css'
 import { Row, Col } from 'react-bootstrap'
 
 class GardenLayoutComponent extends Component {
-    // style={{ maxWidth: "300px", objectFit: "cover", height: "350px" }}
+    constructor(props) {
+        super(props);
+    }
     render() {
         return (
             <div style={{ margin: "30px 10vw" }} >
@@ -12,7 +14,7 @@ class GardenLayoutComponent extends Component {
                     <Col className="col-sm-7 col-12">
                         <Image src="garden_layout.jpeg" style={{ width: "inherit" }} />
                     </Col>
-                    <Col className="col-sm-4 col-12" style={{textAlign:"initial"}}>
+                    <Col className="col-sm-4 col-12" style={{ textAlign: "initial" }}>
                         <p style={{ fontFamily: "Optima", color: "#1c6a5c", fontSize: "30px", fontWeight: "bold" }}>
                             Garden Layout
                         </p>
@@ -40,7 +42,7 @@ class GardenLayoutComponent extends Component {
                         <p style={{ fontFamily: "Nunito", color: "#1c6a5c", fontSize: "12px" }}>
                             This is the most intimate garden with a capacity of up to 60 people. It is hired out at Ksh. 16,000 per day.
                         </p>
-                        <p className="explore_button" style={{backgroundColor: "#2a4c46",padding: "8px 35px",fontSize:"14px"}}>Book Now</p>
+                        <p onClick={() => this.props.book()} className="explore_button" style={{ backgroundColor: "#2a4c46", padding: "8px 35px", fontSize: "14px" }}>Book Now</p>
                     </Col>
                 </Row>
 
