@@ -45,7 +45,7 @@ class AboutComponent extends Component {
 
                 <Row>
                     <Col style={{ textAlign: "end" }} className="hidden_on_small col-lg-6 col-12">
-                        <Image src="sagret_gardens_about_us_image.png" style={{ maxWidth: "300px", objectFit: "cover", height: "350px" }} />
+                        <img src="sagret_gardens_about_us_image.png" style={{ maxWidth: "300px", objectFit: "cover", height: "350px" }} />
                     </Col>
 
                     <Col style={{ paddingTop: "150px" }} className="col-lg-6 col-12">
