@@ -51,7 +51,7 @@ class AmenitiesComponent extends Component {
 
                         </Col>
                         <Col  className="hidden_on_small col-lg-6 col-12" >
-                            <Image src="sagret_gardens_choma.png" style={{ maxWidth: "300px", objectFit: "cover", height: "350px" }} />
+                            <Image src="choma.png" style={{ maxWidth: "300px", objectFit: "cover", height: "350px" }} />
                         </Col>
 
                     </Row>
