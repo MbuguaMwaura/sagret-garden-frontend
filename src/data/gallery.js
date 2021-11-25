@@ -1,83 +1,83 @@
 const gallery = [
     {
-        image: "gallery/image-0.jpeg",
+        image: "gallery/zero.jpg",
         alt: "Image 0"
     },
     {
-        image: "gallery/image-1.jpeg",
+        image: "gallery/one.jpg",
         alt: "Image 1"
     },
     {
-        image: "gallery/image-2.jpeg",
+        image: "gallery/two.jpg",
         alt: "Image 2"
     },
     {
-        image: "gallery/image-3.jpeg",
+        image: "gallery/three.jpg",
         alt: "Image 3"
     },
     {
-        image: "gallery/image-4.jpeg",
+        image: "gallery/four.jpg",
         alt: "Image 4"
     },
 
     {
-        image: "gallery/image-5.jpeg",
+        image: "gallery/five.jpg",
         alt: "Image 5"
     },
     {
-        image: "gallery/image-6.jpeg",
+        image: "gallery/six.jpg",
         alt: "Image 6"
     },
     {
-        image: "gallery/image-7.jpeg",
+        image: "gallery/seven.jpg",
         alt: "Image 7"
     },
     {
-        image: "gallery/image-8.jpeg",
+        image: "gallery/eight.jpg",
         alt: "Image 8"
     },
     {
-        image: "gallery/image-9.jpeg",
+        image: "gallery/nine.jpg",
         alt: "Image 9"
     }
     ,
     {
-        image: "gallery/image-10.jpeg",
+        image: "gallery/ten.jpg",
         alt: "Image 10"
     }
     ,
     {
-        image: "gallery/image-11.jpeg",
+        image: "gallery/eleven.jpg",
         alt: "Image 11"
     }
     ,
     {
-        image: "gallery/image-12.jpeg",
+        image: "gallery/twelve.jpg",
         alt: "Image 12"
     }
     ,
     {
-        image: "gallery/image-13.jpeg",
+        image: "gallery/thirteen.jpg",
         alt: "Image 13"
     }
     ,
     {
-        image: "gallery/image-14.jpeg",
+        image: "gallery/fourteen.jpg",
         alt: "Image 14"
     }
     ,
     {
-        image: "gallery/image-15.jpeg",
+        image: "gallery/fifteen.jpg",
         alt: "Image 15"
     }
     ,
     {
-        image: "gallery/image-16.jpeg",
+        image: "gallery/sixteen.jpg",
         alt: "Image 16"
     }
     ,
     {
-        image: "gallery/image-17.jpeg",
+        image: "gallery/seventeen.jpg",
         alt: "Image 17"
     },
    
