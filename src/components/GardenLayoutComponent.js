@@ -12,7 +12,7 @@ class GardenLayoutComponent extends Component {
             <div style={{ margin: "30px 10vw" }} >
                 <Row style={{ justifyContent: "space-between" }}>
                     <Col className="col-sm-7 col-12">
-                        <Image src="garden_layout.jpeg" style={{ width: "inherit" }} />
+                        <Image src="garden_layout.png" style={{ width: "inherit" }} />
                     </Col>
                     <Col className="col-sm-4 col-12" style={{ textAlign: "initial" }}>
                         <p style={{ fontFamily: "Optima", color: "#1c6a5c", fontSize: "30px", fontWeight: "bold" }}>

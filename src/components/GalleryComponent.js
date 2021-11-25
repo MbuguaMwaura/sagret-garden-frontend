@@ -105,7 +105,7 @@ export default () => {
                     </div>
                 </Col>
                 <Col className="hidden_on_small col-7">
-                    <img style={{ width: "100%" }} src="gallery/image-3.jpeg" alt="flower image" />
+                    <img style={{ width: "100%" }} src="gallery/image-3.png" alt="flower image" />
                 </Col>
             </Row>
 
