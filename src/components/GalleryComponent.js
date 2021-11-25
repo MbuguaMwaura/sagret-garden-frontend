@@ -25,7 +25,7 @@ export default () => {
     for (let i = 0; i < gallery.length; i++) {
         slides.push(
             <SwiperSlide onClick={() => console.log(i)} style={{ listStyle: "none", textAlign: "center", marginLeft: "0px", height: "500px" }} key={`thumb-${i}`} tag="li">
-                <img style={{ width: "100%" }} src={gallery[i].image} alt={`Thumbnail ${i}`} />
+                <img style={{ width: "100%",objectFit: "cover",height: '100%' }} src={gallery[i].image} alt={`Thumbnail ${i}`} />
             </SwiperSlide>
         )
     }
@@ -52,9 +52,9 @@ export default () => {
             </p>
 
                 <Swiper
+                    style={{width:'80%'}}
                     id="main"
                     thumbs={{ swiper: thumbsSwiper }}
-
                     tag="section"
                     wrapperTag="ul"
                     spaceBetween={2}
@@ -74,7 +74,7 @@ export default () => {
                     className="hidden_on_small"
                     id="thumbs"
                     spaceBetween={0}
-                    slidesPerView={5}
+                    slidesPerView={6}
                     onSwiper={setThumbsSwiper}
                     watchSlidesVisibility={true}
                     watchSlidesProgress={true}
@@ -105,7 +105,7 @@ export default () => {
                     </div>
                 </Col>
                 <Col className="hidden_on_small col-7">
-                    <img style={{ width: "100%" }} src="gallery/three.jpg" alt="flower image" />
+                    <img style={{ width: "70%" }} src="gallery/three.jpg" alt="flower image" />
                 </Col>
             </Row>
 
