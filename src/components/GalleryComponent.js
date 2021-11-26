@@ -52,7 +52,7 @@ export default () => {
             </p>
 
                 <Swiper
-                    style={{width:'80%'}}
+                    className="gallery_width"
                     id="main"
                     thumbs={{ swiper: thumbsSwiper }}
                     tag="section"

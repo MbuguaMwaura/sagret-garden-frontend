@@ -28,12 +28,18 @@ const getDimensions = ele => {
 
 var toggleMobileMenu = false
 
-const scrollTo = ele => {
+const scrollTo = (ele,shouldCloseMenu) => {
   ele.scrollIntoView({
     behavior: "smooth",
     block: "start",
   });
-  toggleMenu()
+
+  if(shouldCloseMenu == true){
+    toggleMobileMenu = false
+  }else{
+    toggleMenu()
+  }
+  
 
 };
 const toggleMenu = () => {
@@ -165,7 +171,8 @@ function App() {
               {!toggleMobileMenu ?
                 <Image onClick={() => {
                   scrollTo(bannerRef.current);
-                }} src="humburger_menu.png" style={{ margin: "auto 20px" }} /> : <></>
+                }} src="humburger_menu.png" style={{ margin: "auto 20px" }} /> : <>
+                </>
               }
             </div>
 
@@ -242,7 +249,7 @@ function App() {
 
         <div style={{ paddingTop: "35px" }} id="OurGardens" ref={ourGardensRef} >
           <GardenLayoutComponent
-            book={() => scrollTo(footerRef.current)}
+            book={() => scrollTo(footerRef.current,true)}
             value="ew"
           />
 
