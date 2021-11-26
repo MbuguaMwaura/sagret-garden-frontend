@@ -10,7 +10,7 @@ class AmentiesListComponent extends Component {
                 {amenties.map((amenity,i) => (
                     <div style={{display:"flex",gap:"10px" ,margin:"5px 0" }} key={i}>
                          <Image src={amenity.icon} style={{ width: "40px" ,height: "auto" }} />
-                         <p style={{margin:"auto 0" ,fontFamily:"Nunito",fontSize:"12px"}}>
+                         <p style={{margin:"auto 0" ,fontFamily:"Nunito",fontSize:"12px",textAlign:"left"}}>
                          {amenity.text}
                         </p>
                     </div>

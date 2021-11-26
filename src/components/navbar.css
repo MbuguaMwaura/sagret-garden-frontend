@@ -143,11 +143,16 @@
   .hidden_on_small{
     display: none;
   }
+  .gallery_width{
+    width: 100%; 
+  }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 576px) {
 
-
+  .gallery_width{
+    width: 80%; 
+  }
 }
 
 .top-spacer {
