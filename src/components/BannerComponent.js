@@ -9,8 +9,8 @@ class BannerComponent extends Component {
         return (
             <div className="contain">
 
-                <Image src="sagret_gardens_banner.jpg"  style={{width:"-webkit-fill-available",maxWidth:"100%",objectFit:"cover",height:"450px",filter:"brightness(0.65)"}} />
-                <div className="center title">Sagret Gardens</div>
+                <Image src="sagret_gardens_banner.jpg"  style={{width:"-webkit-fill-available",maxWidth:"100%",objectFit:"cover",height:"350px"}} />
+          
             
             </div>
         )

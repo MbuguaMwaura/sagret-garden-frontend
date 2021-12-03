@@ -14,6 +14,8 @@
 
 .contain {
   position: relative;
+  background-color: #1C6A5C;
+  padding-bottom: 150px;
 }
 
 .center {
@@ -26,7 +28,7 @@
 
 .title {
   font-family: 'Kurale', serif;
-  font-size: 60px;
+  font-size: 30px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -180,7 +182,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #ffffff;
+  background-color: #1C6A5C;
 }
 
 

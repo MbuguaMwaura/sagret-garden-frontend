@@ -166,12 +166,12 @@ function App() {
 
           <div className="mobile_menu header_mobile" ref={headerRef} >
             <div style={{ display: "flex", justifyContent: "space-between" }}>
-              <Image src="sagret_garden_logo.png" style={{ height: "70px", width: "70px", margin: "10px 20px" }} />
-
+              <Image src="sagret_garden_logo.png" style={{ height: "40px", width: "40px", margin: "10px 20px" }} />
+              <div className="center title">Sagret Gardens</div>
               {!toggleMobileMenu ?
                 <Image onClick={() => {
                   scrollTo(bannerRef.current);
-                }} src="humburger_menu.png" style={{ margin: "auto 20px" }} /> : <>
+                }} src="white_humburger.png" style={{ margin: "auto 20px" }} /> : <>
                 </>
               }
             </div>
