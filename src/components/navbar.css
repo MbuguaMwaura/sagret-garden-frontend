@@ -14,8 +14,6 @@
 
 .contain {
   position: relative;
-  background-color: #1C6A5C;
-  padding-bottom: 150px;
 }
 
 .center {
@@ -28,7 +26,7 @@
 
 .title {
   font-family: 'Kurale', serif;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -39,8 +37,10 @@
 
 .about_us_container{
   background-color: #2a4c46;
-  height: 300px;
- 
+  border-radius: 5px;
+  box-shadow: 7px 7px 11px 0 rgb(0 0 0 / 20%);
+  margin:15px 16px;
+  padding: 20px 30px;
   /* justify-content: space-between; */
 }
 .padding{
@@ -123,8 +123,11 @@
 }
 @media screen and (max-width: 576px) {
   .about_us_container{
-    height: 400px;
-    margin:15px 25px;
+    background-color: #2a4c46;
+    border-radius: 5px;
+    box-shadow: 7px 7px 11px 0 rgb(0 0 0 / 20%);
+    margin:15px 16px;
+    padding: 20px 30px;
   }
   .negative_height{
     margin-top: -380px
@@ -227,4 +230,27 @@
 }
 .form-group {
   margin-bottom: unset !important;
+}
+
+.back_container{
+  height: 130px;
+  background-color: #1c6a5c;
+  margin-bottom: -130px;
+}
+
+.main_container{
+  margin:15px 16px;
+}
+
+.our_gardens_container{
+  background-color: #1c6a5c;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.amenities_container{
+ margin-top: 20px;
+}
+.our_gardens_image{
+  margin: auto auto 30px auto;
+  box-shadow: 7px 7px 11px 0 rgb(0 0 0 / 20%);
 }
