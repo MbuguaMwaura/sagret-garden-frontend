@@ -49,14 +49,18 @@
 }
 .explore_button{
   width: fit-content;
-  padding: 12px 17px;
+  padding:  8px 20px;
   box-shadow: 7px 7px 11px 0 rgba(0, 0, 0, 0.16);
-  background-color: #1c6a5c;
+  background-color: #146D69;
   font-family: Optima;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   color: #ffffff;
+  border-radius: 4px;
+
 }
+
+
 .explore_button:active {
   box-shadow: 7px 7px 11px 0 rgba(0, 0, 0, 0.06);
   transform: translateY(4px);
@@ -253,4 +257,19 @@
 .our_gardens_image{
   margin: auto auto 30px auto;
   box-shadow: 7px 7px 11px 0 rgb(0 0 0 / 20%);
+}
+
+.layout_title{
+  font-family: "Optima";
+  color: #ffffff; 
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.layout_description{
+  font-family: "Nunito"; 
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 18px;
 }

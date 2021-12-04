@@ -12,7 +12,7 @@ class AmenitiesComponent extends Component {
 
 
                 <div className="about_us_container padding"></div>
-                <div className="negative_height" style={{ padding: "0 20vw" }}  >
+                <div className="" style={{ padding: "0 20vw" }}  >
 
                     <Row style={{textAlign:"initial"}}>
 

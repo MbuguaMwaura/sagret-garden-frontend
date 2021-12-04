@@ -247,14 +247,14 @@ function App() {
         </div>
 
 
-        <div style={{ paddingTop: "35px" }} id="OurGardens" ref={ourGardensRef} >
+        <div  id="OurGardens" ref={ourGardensRef} >
           <GardenLayoutComponent
             book={() => scrollTo(footerRef.current, true)}
             value="ew"
           />
 
         </div>
-        <div style={{ paddingTop: "35px" }} id="Amenities" ref={amenitiesRef} >
+        <div id="Amenities" ref={amenitiesRef} >
           <AmenitiesComponent />
 
         </div>
