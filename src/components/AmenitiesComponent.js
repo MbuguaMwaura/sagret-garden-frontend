@@ -5,54 +5,96 @@ import { Row, Col } from 'react-bootstrap'
 import AmentiesListComponent from './AmenitiesListComponent'
 
 class AmenitiesComponent extends Component {
-    // style={{display:"flex",padding:"20px 50px",gap:"30px"}}
     render() {
         return (
             <>
 
 
-                <div className="about_us_container padding"></div>
-                <div className="" style={{ padding: "0 20vw" }}  >
+                <div style={{ backgroundColor: "#2a4c46", marginTop: "10px"}}>
+                    <p style={{ paddingTop: "24px", paddingBottom: "24px", textAlign: "center", fontFamily: "Optima", color: "#ffffff", fontSize: "20px", fontWeight: "bold" }}>
+                        The Sagret Garden Amenities
+                    </p>
+                </div>
+                <div style={{ marginTop: "-30px" }}  >
 
-                    <Row style={{textAlign:"initial"}}>
-
-                        <Col className="col-sm-6 col-12">
-                            <Row>
-                                <Col className="col-12">
-                                    <p style={{ fontFamily: "Nunito", color: "#FFFFFF", fontSize: "12px" ,textAlign: "end"}}>
-                                        Sagret gardens is a beautiful botanical garden located on  Kiambu Road. It is made up of 4 cascading
-                                        gardens each surrounded by lush diverse flora.
-                                        This picturesque haven is the perfect
-                                        venue to host everything from small intimate picnics
-                                        to extravagant events.
-                                </p>
-                                </Col>
-
-                                <Col className="col-12" style={{textAlign: "-webkit-right"}}>
-                                    <div >
-                                        <p className="explore_button">Explore the Gardens</p>
-                                    </div>
-                                </Col>
-                            </Row>
+                    <Row style={{ marginRight: "unset", marginLeft: "unset" }}>
+                        <Col className="col-6">
+                            <Image src="choma.jpg" style={{ width: "inherit", objectFit: "cover", borderRadius: "4px", boxShadow: "7px 7px 11px 0 rgb(0 0 0 / 10%)" }} />
 
                         </Col>
-                        <Col className="col-sm-6 col-12" >
-                            <p style={{ fontFamily: "Optima", color: "#FFFFFF", fontSize: "20px", fontWeight: "bold" ,maxWidth:"200px"}}>
-                                The Sagret Garden
-                                Amenities
-                        </p>
+
+                        <Col className="col-6" style={{ margin: "auto" }}>
+                            <p style={{ fontFamily: "Nunito", color: "#2a4c46", fontSize: "11px", textAlign: "start", paddingTop: "30px", fontWeight: "bold", lineHeight: "24px" }}>
+                                We are not just a garden, we are a little slice of eden. To ensure the comfort and relaxation of all our guests. Sagret Gardens has incorporated a variety of amenities and services.
+                                </p>
                         </Col>
                     </Row>
 
-                    <Row>
-       
-                        <Col style={{ paddingTop: "140px", paddingBottom:"20px" }} className="col-lg-6 col-12">
-                          <AmentiesListComponent/>
+
+                    <Row style={{ marginRight: "unset", marginLeft: "unset" }}>
+
+                        <Col style={{ paddingBottom: "20px" }} className="col-lg-6 col-12">
+                            <AmentiesListComponent />
 
                         </Col>
-                        <Col  className="hidden_on_small col-lg-6 col-12" >
-                            <Image src="choma.jpg" style={{ maxWidth: "300px", objectFit: "cover", height: "310px",transform:"rotate(270deg)" }} />
+
+
+                    </Row>
+
+                </div>
+
+                <div style={{ backgroundColor: "#2a4c46", marginTop: "10px", flexDirection: "column", alignItems: "center",paddingLeft:"10px",paddingRight:"10px"  }} >
+
+                    <div style={{ alignItems: "center", display: "flex", flexDirection: "column" }}>
+                        <p className="inclusive_title" style={{ marginTop: "20px" }}>All Inclusive Experiences</p>
+                    </div>
+
+
+                    <Row style={{ marginRight: "unset", marginLeft: "unset" }}>
+
+                        <Col className="col-lg-6 col-6" style={{borderRight: "0.5px solid #146D69",padding:"unset" }} >
+                            <div className="amen_container_left">
+                            
+                            <Image className="rounded_image" src="our_gardens_image.png" />
+                            <div className="indicator"></div>
+                            </div>
+                      
+                            
                         </Col>
+
+                        <Col className="col-lg-6 col-6" style={{ borderLeft: "0.5px solid #146D69", display: "flex", alignItems: "center" }}>
+                            
+
+
+                            <p className="experience_text">Intimate Dates</p>
+                        </Col>
+
+                        
+                        <Col className="col-lg-6 col-6" style={{ justifyContent: "end",borderRight: "0.5px solid #146D69", display: "flex", alignItems: "center" }}>
+                        <p className="experience_text">Birthdays, Showers & more</p>
+                        </Col>
+                        <Col className="col-lg-6 col-6" style={{borderLeft: "0.5px solid #146D69",padding:"unset" }} >
+
+                        <div className="amen_container_right">
+                        <div className="indicator"></div>
+                            <Image className="rounded_image" src="our_gardens_image.png" />
+                    
+                            </div>
+                        </Col>
+
+                        <Col className="col-lg-6 col-6" style={{borderRight: "0.5px solid #146D69",padding:"unset"}} >
+
+                       <div className="amen_container_left">
+                            
+                            <Image className="rounded_image" src="our_gardens_image.png" />
+                            <div className="indicator"></div>
+                            </div>
+                        </Col>
+
+                        <Col className="col-lg-6 col-6" style={{ borderLeft: "0.5px solid #146D69", display: "flex", alignItems: "center" }}>
+                        <p className="experience_text">Extravagant occasions</p>
+                        </Col>
+
 
                     </Row>
 

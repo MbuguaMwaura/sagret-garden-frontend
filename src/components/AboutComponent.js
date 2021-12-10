@@ -51,7 +51,7 @@ class AboutComponent extends Component {
                             Our Gardens
                         
                         </p>
-                        <Image className="our_gardens_image" src="our_gardens_image.png" style={{ margin: "auto" }} /> 
+                        <Image className="our_gardens_image" src="our_gardens_image.png" style={{ margin: "auto",width:"-webkit-fill-available" }} /> 
                     </Col>
 
                     <Col className="col-sm-6 col-12 amenities_container" style={{margin:"auto" }}>

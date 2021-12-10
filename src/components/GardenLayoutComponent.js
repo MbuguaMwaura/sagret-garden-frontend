@@ -82,7 +82,7 @@ class GardenLayoutComponent extends Component {
                         Where are we?
                     </p>
                     <Image src="location.png" style={{ width: "inherit", maxHeight: "350px" }} />
-                    <p style={{ textAlign: "left", fontFamily: "Nunito", color: "#1c6a5c", fontSize: "11px", fontWeight: "bold",margin:"auto 32px",lineHeight:"20px" }}>
+                    <p style={{ textAlign: "left", fontFamily: "Nunito", color: "#2a4c46", fontSize: "11px", fontWeight: "bold",margin:"auto 32px",lineHeight:"20px" }}>
                      We are strategically located along Kiambu Road, one minute drive behind Quickmart in Thindigua. This place is easily accessible to all. We also provide ample parking right next to the garden.
                     </p>
                 </div>

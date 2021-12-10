@@ -1,6 +1,6 @@
 import React, { Component, useState } from 'react';
 import './navbar.css'
-import amenties from '../data/amenities'
+import amenties from '../data/amenitiesOne'
 import { Image, Modal, Button, Row, Col, Form } from 'react-bootstrap'
 import axios from 'axios'
 
