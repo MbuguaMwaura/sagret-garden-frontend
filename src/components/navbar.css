@@ -82,8 +82,8 @@
 }
 
 .gallery-container{
-  padding:25px 15vw;
-  background-color: #2a4c46;
+  padding:8px 8px;
+  background-color: #ffffff;
 }
 .footer-container{
   margin-top: 30px;
@@ -334,4 +334,14 @@
     width: 120px;
     height: 120px;
   }
+}
+
+.rounded{
+  border-radius: 50%;
+  box-shadow: 7px 7px 11px 0 rgba(0, 0, 0, 0.16);
+}
+
+.image_row{
+  display: flex;
+
 }
