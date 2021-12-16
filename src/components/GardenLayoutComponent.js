@@ -78,11 +78,17 @@ class GardenLayoutComponent extends Component {
                 </div>
 
                 <div style={{display: "flex",flexDirection: "column"}}>
-                    <p style={{ marginTop: "10px", width: "100%", textAlign: "center", fontFamily: "Optima", color: "#1c6a5c", fontSize: "20px", fontWeight: "bold" }}>
+                    <p style={{ margin: "16px auto", width: "100%", textAlign: "center", fontFamily: "Optima", color: "#1c6a5c", fontSize: "20px", fontWeight: "bold" }}>
                         Where are we?
                     </p>
-                    <Image src="location.png" style={{ width: "inherit", maxHeight: "350px" }} />
-                    <p style={{ textAlign: "left", fontFamily: "Nunito", color: "#2a4c46", fontSize: "11px", fontWeight: "bold",margin:"auto 32px",lineHeight:"20px" }}>
+                    <iframe
+                        max-width="450"
+                        height="450"
+                        frameborder="0" style={{border:"0"}}
+                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCNsmgorp06P8qYILkWucOMFerRWAhguRQ&q=Sagret+Gardens,Kiambu+Kenya&zoom=16" allowfullscreen>
+                        </iframe>
+                        
+                    <p style={{ textAlign: "left", fontFamily: "Nunito", color: "#2a4c46", fontSize: "11px", fontWeight: "bold",margin:"24px 32px",lineHeight:"20px" }}>
                      We are strategically located along Kiambu Road, one minute drive behind Quickmart in Thindigua. This place is easily accessible to all. We also provide ample parking right next to the garden.
                     </p>
                 </div>

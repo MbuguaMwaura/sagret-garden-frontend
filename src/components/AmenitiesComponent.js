@@ -10,7 +10,7 @@ class AmenitiesComponent extends Component {
             <>
 
 
-                <div style={{ backgroundColor: "#2a4c46", marginTop: "10px"}}>
+                <div style={{ backgroundColor: "#2a4c46"}}>
                     <p style={{ paddingTop: "24px", paddingBottom: "24px", textAlign: "center", fontFamily: "Optima", color: "#ffffff", fontSize: "20px", fontWeight: "bold" }}>
                         The Sagret Garden Amenities
                     </p>
