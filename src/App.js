@@ -28,18 +28,18 @@ const getDimensions = ele => {
 
 var toggleMobileMenu = false
 
-const scrollTo = (ele,shouldCloseMenu) => {
+const scrollTo = (ele, shouldCloseMenu) => {
   ele.scrollIntoView({
     behavior: "smooth",
     block: "start",
   });
 
-  if(shouldCloseMenu == true){
+  if (shouldCloseMenu == true) {
     toggleMobileMenu = false
-  }else{
+  } else {
     toggleMenu()
   }
-  
+
 
 };
 const toggleMenu = () => {
@@ -66,7 +66,7 @@ function App() {
     { section: "About_Us", ref: aboutUsRef },
     { section: "OurGardens", ref: ourGardensRef },
     { section: "Amenities", ref: amenitiesRef },
-    { section: "Footer", ref : footerRef}
+    { section: "Footer", ref: footerRef }
   ];
 
   const sendDataToParent = (message) => {
@@ -166,12 +166,13 @@ function App() {
 
           <div className="mobile_menu header_mobile" ref={headerRef} >
             <div style={{ display: "flex", justifyContent: "space-between" }}>
-              <Image src="sagret_garden_logo.png" style={{ height: "70px", width: "70px", margin: "10px 20px" }} />
-
+              <Image src="sagret_garden_logo.png" style={{ height: "40px", width: "40px", margin: "10px 20px" }} />
+              <div className="center title">Sagret Gardens</div>
               {!toggleMobileMenu ?
-                <Image onClick={() => {
-                  scrollTo(bannerRef.current);
-                }} src="humburger_menu.png" style={{ margin: "auto 20px" }} /> : <>
+                <a style={{display:"contents"}} href="tel:+254706228088">
+                  <Image src="phone-icon.png" style={{ margin: "auto 22px", height:"22px" }} />
+                </a>
+                 : <>
                 </>
               }
             </div>
@@ -241,20 +242,20 @@ function App() {
         <div id="Banner" ref={bannerRef} >
           <BannerComponent />
         </div>
-        <div style={{ paddingTop: "35px" }} id="About_Us" ref={aboutUsRef}>
+        <div id="About_Us" ref={aboutUsRef}>
           <AboutComponent />
 
         </div>
 
 
-        <div style={{ paddingTop: "35px" }} id="OurGardens" ref={ourGardensRef} >
+        <div  id="OurGardens" ref={ourGardensRef} >
           <GardenLayoutComponent
-            book={() => scrollTo(footerRef.current,true)}
+            book={() => scrollTo(footerRef.current, true)}
             value="ew"
           />
 
         </div>
-        <div style={{ paddingTop: "35px" }} id="Amenities" ref={amenitiesRef} >
+        <div id="Amenities" ref={amenitiesRef} >
           <AmenitiesComponent />
 
         </div>

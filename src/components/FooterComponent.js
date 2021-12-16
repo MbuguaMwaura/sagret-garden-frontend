@@ -11,14 +11,12 @@ class BannerComponent extends Component {
     render() {
         const socialIcons = []
 
-        const instagram = { link: "", icon: "instagram.png" }
+        const instagram = { link: "https://www.instagram.com/sagretgardens/", icon: "instagram.png" }
         socialIcons.push(instagram)
 
-        const twitter = { link: "", icon: "twitter.png" }
-        socialIcons.push(twitter)
-
-        const facebook = { link: "", icon: "facebook.png" }
+        const facebook = { link: "https://www.facebook.com/sagretgardens/", icon: "facebook.png" }
         socialIcons.push(facebook)
+
 
         return (
             <div className="footer-container">
@@ -26,32 +24,45 @@ class BannerComponent extends Component {
 
                 <div style={{ padding: "2vw 0 5px 0" }}>
 
-                    <div style={{ padding: "2vw 10vw" }}>
-
-                        <Row style={{textAlign:"initial"}}>
-                            <Col className="col-md-6 col-12">
-                                <p style={{ fontFamily: "Optima", color: "#ffffff", fontSize: "16px" }}>
-                                    Contact info
+                    <div style={{ padding: "2vw 7vw" }}>
+                        <div style={{ textAlign: "initial" }}>
+                            <p style={{ fontFamily: "Optima", color: "#ffffff", fontSize: "14px", fontWeight: "bold", marginBottom: "4px" }}>
+                                We would love to hear from you!
                                 </p>
-                                <p style={{ fontFamily: "Nunito", color: "#ffffff", fontSize: "12px" }}>
-                                    For more information, please contact us at:
-                             {icons.map((icon, i) => (
-                                    <div style={{ display: "flex", gap: "10px", margin: "5px 20px" }} key={i}>
-                                        <Image src={icon.icon} style={{ width: "25px", height: "auto" }} />
-                                        <p style={{ margin: "auto 0", fontFamily: "Nunito", fontSize: "10px" }}>
+                            <p style={{ fontFamily: "Nunito", color: "#ffffff", fontSize: "11px" }}>
+                                To get in touch, please contact us at:
+                                </p>
+                        </div>
+
+                        <Row style={{ textAlign: "initial" }}>
+                            <Col className="col-6">
+
+                                {icons.map((icon, i) => (
+
+                                    <a href={icon.link}  >
+                                    <div style={{ display: "flex", gap: "5px", margin: "5px auto" }} key={i}>
+                                        <Image src={icon.icon} style={{ width: "30px", height: "auto" }} />
+                                        <p style={{ margin: "auto 0", fontFamily: "Nunito", fontSize: "10px", color: "#ffffff" }}>
                                             {icon.text}
                                         </p>
                                     </div>
+                                    </a>
 
                                 ))
-                                    }
-                                </p>
-                            </Col>
-                            <Col className="col-md-6 col-12 align-self-end">
-                                <div style={{ display: "flex", gap: "15px" ,justifyContent: "center", marginBottom:"20px"}} >
-                                    {socialIcons.map((icon, i) => (
+                                }
 
-                                        <Image key={i} src={icon.icon} style={{ width: "40px", height: "auto" }} />
+                            </Col>
+                            <Col className="col-6">
+                                <div style={{ display: "flex", gap: "5px", justifyContent: "center", marginTop: "5px", marginBottom: "20px", marginLeft: "20px", flexDirection: "column" }} >
+                                    {socialIcons.map((icon, i) => (
+                                        <a href={icon.link} target="_blank">
+                                            <div style={{ display: "flex", gap: "5px" }} key={i}>
+                                                <Image key={i} src={icon.icon} style={{ width: "30px", height: "auto" }} />
+                                                <p style={{ margin: "auto 0", fontFamily: "Nunito", fontSize: "10px", color: "#ffffff" }}>
+                                                    Sagret Gardens
+                                                </p>
+                                            </div>
+                                        </a>
 
                                     ))}
                                 </div>
@@ -60,11 +71,7 @@ class BannerComponent extends Component {
 
                     </div>
 
-                    <hr style={{ margin: "10px auto", borderColor: "#dae8e7", opacity: "0.15" }} />
-                    <p style={{ fontFamily: "Nunito", color: "#ffffff", fontSize: "10px", textAlign: "center", margin: "unset" }}>
-                        Privacy Policy &nbsp; &nbsp; &nbsp; &nbsp; Terms &amp; Conditions &nbsp; &nbsp; &nbsp; &nbsp;  Website Terms of Use &nbsp; &nbsp; &nbsp; &nbsp;  Gardens Offers
-                        <br />
-                        All rights reserved © 2020 Sagret Gardens &nbsp; &nbsp; &nbsp; &nbsp;   Crafted by AzawenaPro</p>
+
                 </div>
 
 

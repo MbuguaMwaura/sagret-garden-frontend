@@ -1,15 +1,13 @@
 const icons = [
     {
-        icon:"icons/location_icon.png",
-        text:"Thindigua, Kiambu Road"
-    },
-    {
         icon:"icons/phone_icon.png",
-        text:"+254706228088"
+        text:"+254706228088",
+        link:"tel:+254706228088"
     },
     {
         icon:"icons/email_icon.png",
-        text:"sagretgardens@gmail.com"
+        text:"sagretgardens@gmail.com",
+        link:"mailto: sagretgardens@gmail.com"
     }
 ]
 export default icons
