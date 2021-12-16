@@ -34,10 +34,10 @@ export default () => {
                 <Row style={{ margin: "unset", marginTop:"8px"}}>
                     <Col className="col-8" style={{ padding: "unset", paddingRight:"8px"}} >
 
-                    <img className="rounded" style={{ width: "100%",height:"225px",objectFit:"cover" }} src="gallery/pic_11.jpeg" alt="flower image" />
+                    <img className="rounded" style={{ width: "100%",height:"225px",objectFit:"cover" }} src="gallery/pic_11.jpg" alt="flower image" />
                     </Col>
                     <Col className="col-4" style={{ padding: "unset"}} >
-                    <img className="rounded" style={{ width: "100%",height:"225px",objectFit:"cover" }} src="gallery/pic_6.jpeg" alt="flower image" />
+                    <img className="rounded" style={{ width: "100%",height:"225px",objectFit:"cover" }} src="gallery/pic_6.jpg" alt="flower image" />
                     </Col>
                     
                 </Row>
@@ -48,7 +48,7 @@ export default () => {
                     <img className="rounded" style={{ width: "100%",height:"225px",objectFit:"cover" }} src="gallery/one.jpg" alt="flower image" />
                     </Col>
                     <Col className="col-6" style={{ padding: "unset"}} >
-                    <img className="rounded" style={{ width: "100%",height:"225px",objectFit:"cover" }} src="gallery/pic_19.jpeg" alt="flower image" />
+                    <img className="rounded" style={{ width: "100%",height:"225px",objectFit:"cover" }} src="gallery/pic_19.jpg" alt="flower image" />
                     </Col>
                     
                 </Row>
