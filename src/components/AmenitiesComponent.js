@@ -15,7 +15,7 @@ class AmenitiesComponent extends Component {
                         The Sagret Garden Amenities
                     </p>
                 </div>
-                <div style={{ marginTop: "-30px" }}  >
+                <div style={{ marginTop: "-30px" }}>
 
                     <Row style={{ marginRight: "unset", marginLeft: "unset" }}>
                         <Col className="col-6">
@@ -43,7 +43,7 @@ class AmenitiesComponent extends Component {
 
                 </div>
 
-                <div style={{ backgroundColor: "#2a4c46", marginTop: "10px", flexDirection: "column", alignItems: "center",paddingLeft:"10px",paddingRight:"10px"  }} >
+                <div style={{ backgroundColor: "#2a4c46", marginTop: "10px", flexDirection: "column", alignItems: "center",paddingLeft:"10px",paddingRight:"10px",paddingBottom:"24px"  }} >
 
                     <div style={{ alignItems: "center", display: "flex", flexDirection: "column" }}>
                         <p className="inclusive_title" style={{ marginTop: "20px" }}>All Inclusive Experiences</p>
@@ -55,7 +55,7 @@ class AmenitiesComponent extends Component {
                         <Col className="col-lg-6 col-6" style={{borderRight: "0.5px solid #146D69",padding:"unset" }} >
                             <div className="amen_container_left">
                             
-                            <Image className="rounded_image" src="our_gardens_image.png" />
+                            <Image className="rounded_image" src="gallery/pic_20.jpeg" />
                             <div className="indicator"></div>
                             </div>
                       
@@ -63,9 +63,6 @@ class AmenitiesComponent extends Component {
                         </Col>
 
                         <Col className="col-lg-6 col-6" style={{ borderLeft: "0.5px solid #146D69", display: "flex", alignItems: "center" }}>
-                            
-
-
                             <p className="experience_text">Intimate Dates</p>
                         </Col>
 
@@ -77,7 +74,7 @@ class AmenitiesComponent extends Component {
 
                         <div className="amen_container_right">
                         <div className="indicator"></div>
-                            <Image className="rounded_image" src="our_gardens_image.png" />
+                            <Image className="rounded_image" src="gallery/pic_4.jpeg" />
                     
                             </div>
                         </Col>
@@ -86,7 +83,7 @@ class AmenitiesComponent extends Component {
 
                        <div className="amen_container_left">
                             
-                            <Image className="rounded_image" src="our_gardens_image.png" />
+                            <Image className="rounded_image" src="gallery/pic_21.jpeg" />
                             <div className="indicator"></div>
                             </div>
                         </Col>

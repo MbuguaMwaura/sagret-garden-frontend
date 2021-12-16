@@ -16,7 +16,6 @@ class AboutComponent extends Component {
                     <Col className="col-sm-6 col-12">
                         <p style={{ fontFamily: "Optima", color: "#FFFFFF", fontSize: "20px", textAlign: "center", fontWeight: "bold" }}>
                             A Blooming Treasure
-                        
                         </p>
                     </Col>
 
