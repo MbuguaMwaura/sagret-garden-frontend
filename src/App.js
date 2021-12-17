@@ -169,7 +169,7 @@ function App() {
               <Image src="sagret_garden_logo.png" style={{ height: "40px", width: "40px", margin: "10px 20px" }} />
               <div className="center title">Sagret Gardens</div>
               {!toggleMobileMenu ?
-                <a style={{display:"contents"}} href="tel:+254706228088">
+                <a style={{display:"contents"}} href="tel:+254715398758">
                   <Image src="phone-icon.png" style={{ margin: "auto 22px", height:"22px" }} />
                 </a>
                  : <>

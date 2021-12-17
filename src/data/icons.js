@@ -1,8 +1,8 @@
 const icons = [
     {
         icon:"icons/phone_icon.png",
-        text:"+254706228088",
-        link:"tel:+254706228088"
+        text:"+254715398758",
+        link:"tel:+254715398758"
     },
     {
         icon:"icons/email_icon.png",

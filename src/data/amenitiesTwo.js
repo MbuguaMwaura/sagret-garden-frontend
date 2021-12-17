@@ -9,8 +9,8 @@ const amenitiesTwo = [
         text:"Catering services"
     },
     {
-        icon:"amenities/amenity_catering.jpg",
-        text:"Cutlery for Hire"
+        icon:"amenities/amenity_floodlights.png",
+        text:"Floodlights"
     }
 ]
 export default amenitiesTwo
