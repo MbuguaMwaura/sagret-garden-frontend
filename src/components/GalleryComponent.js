@@ -52,6 +52,9 @@ export default () => {
                     </Col>
                     
                 </Row>
+
+                <img className="rounded" style={{ width: "100%",height:"200px",objectFit:"cover",marginTop:"8px" }} src="gallery/garden.jpg" alt="flower image" />
+
             </div>
 
 

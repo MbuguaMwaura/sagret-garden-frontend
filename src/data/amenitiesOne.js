@@ -1,6 +1,6 @@
 const amenitiesOne = [
     {
-        icon:"amenities/amenity_cutlery.jpg",
+        icon:"amenities/amenity_parking.png",
         text:"Ample Parking"
     },
     {
@@ -11,9 +11,6 @@ const amenitiesOne = [
         icon:"amenities/amenity_washroom.jpg",
         text:"Clean Washrooms"
     },
-    {
-        icon:"amenities/amenity_snack.jpg",
-        text:"Floodlights"
-    }
+    
 ]
 export default amenitiesOne
