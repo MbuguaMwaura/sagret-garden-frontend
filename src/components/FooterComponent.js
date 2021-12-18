@@ -22,7 +22,7 @@ class BannerComponent extends Component {
             <div className="footer-container">
 
 
-                <div style={{ padding: "2vw 0 5px 0" }}>
+                <div className="large_container" style={{ padding: "2vw 0 5px 0" }}>
 
                     <div style={{ padding: "2vw 7vw" }}>
                         <div style={{ textAlign: "initial" }}>

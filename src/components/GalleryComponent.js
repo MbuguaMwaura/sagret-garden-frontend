@@ -9,7 +9,7 @@ export default () => {
 
     return (
         <React.Fragment>
-            <div className="gallery-container">
+            <div className="gallery-container large_container">
 
                 <p style={{ fontFamily: "Optima", color: "#2a4c46", fontSize: "20px", fontWeight: "bold", textAlign: "center" }}>
                     Garden Views
