@@ -81,152 +81,26 @@ function App() {
     }
   };
 
-  const validateForm = (validate) => {
-    return validate
-  }
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const { height: headerHeight } = getDimensions(headerRef.current);
-      const scrollPosition = window.scrollY + headerHeight;
-
-      const selected = sectionRefs.find(({ section, ref }) => {
-        const ele = ref.current;
-        if (ele) {
-          const { offsetBottom, offsetTop } = getDimensions(ele);
-          return scrollPosition > offsetTop && scrollPosition < offsetBottom;
-        }
-      });
-
-      if (selected && selected.section !== visibleSection) {
-        setVisibleSection(selected.section);
-      } else if (!selected && visibleSection) {
-        setVisibleSection(undefined);
-      }
-    };
-
-    handleScroll();
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [visibleSection]);
   return (
     <div className="App">
       <div className="" />
 
       <div className="content">
         <div className="sticky">
-          {/* Start of large Menu */}
-          <div className="large_menu header" ref={headerRef}>
-            <button
-              type="button"
-              className={`header_link ${visibleSection === "About_Us" ? "selected" : ""} nav_style`}
-              onClick={() => {
-                scrollTo(aboutUsRef.current);
-              }}
-            >
-              ABOUT US
-            </button>
-            <button
-              type="button"
-              className={`header_link ${visibleSection === "OurGardens" ? "selected" : ""} nav_style`}
-              onClick={() => {
-                scrollTo(ourGardensRef.current);
-              }}
-            >
-              OUR GARDENS
-            </button>
-            <Image onClick={() => {
-              scrollTo(bannerRef.current);
-            }} src="sagret_garden_logo.png" style={{ height: "70px", margin: "0 50px" }} />
 
-            <button
-              type="button"
-              className={`header_link ${visibleSection === "Amenities" ? "selected" : ""} nav_style`}
-              onClick={() => {
-                scrollTo(amenitiesRef.current);
-              }}
-            >
-              AMENITIES
-            </button>
-            <button
-              type="button"
-              className={`header_link nav_style book_btn`}
-              onClick={() => {
-                scrollTo(footerRef.current);
-              }}
-            >
-              BOOK NOW
-            </button>
-          </div>
-          {/* End of Large Menu */}
-
-          {/* Start of Mobile Menu */}
 
           <div className="mobile_menu header_mobile" ref={headerRef} >
-            <div style={{ display: "flex", justifyContent: "space-between" }}>
+            <div style={{ display: "flex", justifyContent: "space-between"}}>
               <Image src="sagret_garden_logo.png" style={{ height: "40px", width: "40px", margin: "10px 20px" }} />
               <div className="center title">Sagret Gardens</div>
-              {!toggleMobileMenu ?
+        
                 <a style={{display:"contents"}} href="tel:+254715398758">
                   <Image src="phone-icon.png" style={{ margin: "auto 22px", height:"22px" }} />
                 </a>
-                 : <>
-                </>
-              }
+                
             </div>
-
-
-            {toggleMobileMenu ?
-
-              <>
-                <button
-                  style={{ width: "150px" }}
-                  type="button"
-                  className={`header_link ${visibleSection === "About_Us" ? "selected" : ""} nav_style`}
-                  onClick={() => {
-                    scrollTo(aboutUsRef.current);
-                  }}
-                >
-                  ABOUT US
-            </button>
-                <button
-                  style={{ width: "150px" }}
-                  type="button"
-                  className={`header_link ${visibleSection === "OurGardens" ? "selected" : ""} nav_style`}
-                  onClick={() => {
-                    scrollTo(ourGardensRef.current);
-                  }}
-                >
-                  OUR GARDENS
-            </button>
-
-
-                <button
-                  style={{ width: "150px" }}
-                  type="button"
-                  className={`header_link ${visibleSection === "Amenities" ? "selected" : ""} nav_style`}
-                  onClick={() => {
-                    scrollTo(amenitiesRef.current);
-                  }}
-                >
-                  AMENITIES
-            </button>
-                <button
-                  type="button"
-                  className={`header_link nav_style book_btn`}
-                  style={{ marginTop: "0px !important", textAlign: "center", width: "150px" }}
-                  onClick={() => {
-                    scrollTo(footerRef.current);
-                  }}
-                >
-                  BOOK NOW
-            </button>
-              </> : <></>
-            }
+                 
           </div>
-          {/* End of Mobile Menu */}
         </div>
         <BookModal
           show={modalShow}
@@ -250,8 +124,6 @@ function App() {
 
         <div  id="OurGardens" ref={ourGardensRef} >
           <GardenLayoutComponent
-            book={() => scrollTo(footerRef.current, true)}
-            value="ew"
           />
 
         </div>

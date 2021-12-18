@@ -15,7 +15,7 @@ class AmenitiesComponent extends Component {
                         The Sagret Garden Amenities
                     </p>
                 </div>
-                <div style={{ marginTop: "-30px" }}>
+                <div className="large_container" style={{ marginTop: "-30px" }}>
 
                     <Row style={{ marginRight: "unset", marginLeft: "unset" }}>
                         <Col className="col-6">

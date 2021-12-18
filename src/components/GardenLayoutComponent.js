@@ -77,14 +77,14 @@ class GardenLayoutComponent extends Component {
                     </div>
                 </div>
 
-                <div style={{display: "flex",flexDirection: "column"}}>
+                <div className="large_container" style={{display: "flex",flexDirection: "column"}}>
                     <p style={{ margin: "16px auto", width: "100%", textAlign: "center", fontFamily: "Optima", color: "#1c6a5c", fontSize: "20px", fontWeight: "bold" }}>
                         Where are we?
                     </p>
                     <iframe
                         height="450"
-                        frameborder="0" style={{border:"0"}}
-                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCNsmgorp06P8qYILkWucOMFerRWAhguRQ&q=Sagret+Gardens,Kiambu+Kenya&zoom=16" allowfullscreen>
+                        style={{border:"0"}}
+                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCNsmgorp06P8qYILkWucOMFerRWAhguRQ&q=Sagret+Gardens,Kiambu+Kenya&zoom=16">
                         </iframe>
                         
                     <p style={{ textAlign: "left", fontFamily: "Nunito", color: "#2a4c46", fontSize: "11px", fontWeight: "bold",margin:"24px 32px",lineHeight:"20px" }}>

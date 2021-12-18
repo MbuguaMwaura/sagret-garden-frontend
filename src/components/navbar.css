@@ -76,7 +76,7 @@
   display: block !important;
 }
 .mobile_menu{
-  display: none !important; 
+  display: block !important; 
 }
 .negative_height{
   margin-top: -300px
@@ -159,6 +159,9 @@
 }
 
 @media screen and (min-width: 576px) {
+  .main_container{
+    padding: unset !important;
+  }
 
   .gallery_width{
     width: 80%; 
@@ -179,6 +182,7 @@
   left: 0;
   right: 0;
   z-index: 10;
+  background-color: #1C6A5C;
 }
 
 .header {
@@ -187,10 +191,12 @@
   background-color: #ffffff;
 }
 .header_mobile {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   justify-content: center;
-  background-color: #1C6A5C;
+
+  margin: 0 auto;
+  max-width:600px;
 }
 
 
@@ -246,12 +252,15 @@
 .main_container{
   margin:15px auto;
   max-width: 600px;
+  padding: 0 16px;
 }
 
 .our_gardens_container{
   background-color: #1c6a5c;
   padding-top: 10px;
   padding-bottom: 30px;
+  border-radius: 5px;
+  height: "-webkit-fill-available";
 }
 .amenities_container{
  margin-top: 20px;
@@ -349,4 +358,12 @@
 }
 a{
   text-decoration: none !important;
+}
+.row_margin{
+  padding : 0 16px; 
+}
+
+.large_container{
+  max-width: 600px;
+  margin: 0 auto;
 }
