@@ -22,7 +22,7 @@ class GardenLayoutComponent extends Component {
                                 Garden Layout
                             </p>
                             <Col className="col-12">
-                                <Image src="garden_layout.png" style={{ width: "inherit"}} />
+                                <Image src="garden_layout.png" style={{ width: "inherit",padding:"0 10vw"}} />
 
                             </Col>
                             <Col className="col-12" style={{ textAlign: "initial" }}>
