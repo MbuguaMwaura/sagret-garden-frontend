@@ -22,7 +22,7 @@ class AboutComponent extends Component {
                     <Col className="col-sm-6 col-12">
                         <Row>
                             <Col className="col-12">
-                                <p style={{ fontFamily: "Nunito", color: "#FFFFFF", fontSize: "12px" ,textAlign:"initial",lineHeight: "24px",fontWeight: "bold"}}>
+                                <p className="text_size_12" style={{ fontFamily: "Nunito", color: "#FFFFFF",textAlign:"initial",lineHeight: "24px",fontWeight: "bold"}}>
                                 Sagret gardens is a beautiful botanical garden located on 
                                  Kiambu Road. 
                                  It is made up of 4 cascading gardens each surrounded by 
@@ -58,7 +58,7 @@ class AboutComponent extends Component {
                             <Col className="col-12" >
                             {garden.map((amenity,i) => (
                                 <div style={{display:"flex" ,margin:"5px 0" }} key={i}>
-                                    <p style={{margin:"5px 70px" ,fontFamily:"Nunito",fontSize:"12px",textAlign:"center", width:"100%"}}>
+                                    <p className="text_size_12" style={{margin:"5px 70px" ,fontFamily:"Nunito",textAlign:"center", width:"100%"}}>
                                             {amenity.text}
                                     </p>
                                     

@@ -26,10 +26,10 @@ class BannerComponent extends Component {
 
                     <div style={{ padding: "2vw 7vw" }}>
                         <div style={{ textAlign: "initial" }}>
-                            <p style={{ fontFamily: "Optima", color: "#ffffff", fontSize: "14px", fontWeight: "bold", marginBottom: "4px" }}>
+                            <p className="text_size_14" style={{ fontFamily: "Optima", color: "#ffffff", fontWeight: "bold", marginBottom: "4px" }}>
                                 We would love to hear from you!
                                 </p>
-                            <p style={{ fontFamily: "Nunito", color: "#ffffff", fontSize: "11px" }}>
+                            <p className="text_size_11" style={{ fontFamily: "Nunito", color: "#ffffff"}}>
                                 To get in touch, please contact us at:
                                 </p>
                         </div>
@@ -42,7 +42,7 @@ class BannerComponent extends Component {
                                     <a href={icon.link}  >
                                     <div style={{ display: "flex", gap: "5px", margin: "5px auto" }} key={i}>
                                         <Image src={icon.icon} style={{ width: "30px", height: "auto" }} />
-                                        <p style={{ margin: "auto 0", fontFamily: "Nunito", fontSize: "10px", color: "#ffffff" }}>
+                                        <p className="text_size_11" style={{ margin: "auto 0", fontFamily: "Nunito", color: "#ffffff" }}>
                                             {icon.text}
                                         </p>
                                     </div>
@@ -58,7 +58,7 @@ class BannerComponent extends Component {
                                         <a href={icon.link} target="_blank">
                                             <div style={{ display: "flex", gap: "5px" }} key={i}>
                                                 <Image key={i} src={icon.icon} style={{ width: "30px", height: "auto" }} />
-                                                <p style={{ margin: "auto 0", fontFamily: "Nunito", fontSize: "10px", color: "#ffffff" }}>
+                                                <p className="text_size_11" style={{ margin: "auto 0", fontFamily: "Nunito", color: "#ffffff" }}>
                                                     Sagret Gardens
                                                 </p>
                                             </div>
