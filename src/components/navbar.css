@@ -41,7 +41,7 @@
   box-shadow: 7px 7px 11px 0 rgb(0 0 0 / 20%);
   margin:15px auto;
   padding: 20px 30px;
-  max-width: 600px;
+  max-width: 900px;
   /* justify-content: space-between; */
 }
 .padding{
@@ -70,7 +70,7 @@
   display: block;
 }
 .hidden_on_large{
-  display: none; 
+  display: none !important; 
 }
 .large_menu{
   display: block !important;
@@ -142,7 +142,7 @@
     height: 350px;
   }
   .hidden_on_large{
-    display: block; 
+    display: block !important; 
   }
   .large_menu{
     display: none !important;
@@ -151,11 +151,41 @@
     display: flex !important;
   }
   .hidden_on_small{
-    display: none;
+    display: none !important;
   }
   .gallery_width{
     width: 100%; 
   }
+  .text_size_11{
+    font-size: 11px !important;
+  }
+
+  .text_size_14{
+    font-size: 14px !important;
+  }
+
+  .text_size_12{
+    font-size: 12px !important;
+  }
+  
+  .indicator{
+    width: 29px !important;
+  }
+
+  .rounded_image{
+    width: 120px !important;
+    height: 120px !important;
+  }
+
+
+  .rounded_225{
+    height: 225px !important;
+  }
+  .rounded_110{
+    height: 110px !important;
+  }
+  
+  
 }
 
 @media screen and (min-width: 576px) {
@@ -196,7 +226,7 @@
   justify-content: center;
 
   margin: 0 auto;
-  max-width:600px;
+  max-width:900px;
 }
 
 
@@ -251,7 +281,7 @@
 
 .main_container{
   margin:15px auto;
-  max-width: 600px;
+  max-width: 900px;
   padding: 0 16px;
 }
 
@@ -306,8 +336,8 @@
 
 .rounded_image{
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   margin-top: 10px;
   box-shadow: 7px 7px 11px 0 rgba(0, 0, 0, 0.16);
@@ -324,7 +354,7 @@
 }
 
 .indicator{
-  width: 29px;
+  width: 66px;
   height: 2px;
   background-color: rgb(20, 109, 105);
 }
@@ -352,6 +382,15 @@
   box-shadow: 7px 7px 11px 0 rgba(0, 0, 0, 0.16);
 }
 
+.rounded_225{
+  height: 300px;
+}
+
+.rounded_110{
+  height: 200px;
+}
+
+
 .image_row{
   display: flex;
 
@@ -365,6 +404,16 @@ a{
 }
 
 .large_container{
-  max-width: 600px;
+  max-width: 900px;
   margin: 0 auto;
+}
+
+.text_size_11{
+  font-size: 14px;
+}
+.text_size_14{
+  font-size: 16px;
+}
+.text_size_12{
+  font-size: 14px;
 }

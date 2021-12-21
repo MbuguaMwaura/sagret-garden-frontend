@@ -19,19 +19,24 @@ class AmenitiesComponent extends Component {
 
                     <Row style={{ marginRight: "unset", marginLeft: "unset" }}>
                         <Col className="col-6">
-                            <Image src="choma.jpg" style={{ width: "inherit", objectFit: "cover", borderRadius: "4px", boxShadow: "7px 7px 11px 0 rgb(0 0 0 / 10%)" }} />
+                            <Image src="choma.jpg" style={{ maxHeight:"400px", width: "inherit", objectFit: "cover", borderRadius: "4px", boxShadow: "7px 7px 11px 0 rgb(0 0 0 / 10%)" }} />
 
                         </Col>
 
                         <Col className="col-6" style={{ margin: "auto" }}>
-                            <p style={{ fontFamily: "Nunito", color: "#2a4c46", fontSize: "11px", textAlign: "start", paddingTop: "30px", fontWeight: "bold", lineHeight: "24px" }}>
+                            <p className="text_size_11" style={{ fontFamily: "Nunito", color: "#2a4c46", textAlign: "start", paddingTop: "30px", fontWeight: "bold", lineHeight: "24px" }}>
                                 We are not just a garden, we are a little slice of eden. To ensure the comfort and relaxation of all our guests. Sagret Gardens has incorporated a variety of amenities and services.
                                 </p>
+                                <div className="hidden_on_small" >
+                                <AmentiesListComponent />
+                                </div>
+                               
+
                         </Col>
                     </Row>
 
 
-                    <Row style={{ marginRight: "unset", marginLeft: "unset" }}>
+                    <Row className="hidden_on_large" style={{ marginRight: "unset", marginLeft: "unset" }}>
 
                         <Col style={{ paddingBottom: "20px" }} className="col-lg-6 col-12">
                             <AmentiesListComponent />
@@ -63,12 +68,12 @@ class AmenitiesComponent extends Component {
                         </Col>
 
                         <Col className="col-lg-6 col-6" style={{ borderLeft: "0.5px solid #146D69", display: "flex", alignItems: "center" }}>
-                            <p className="experience_text">Intimate Dates</p>
+                            <p className="experience_text text_size_14">Intimate Dates</p>
                         </Col>
 
                         
                         <Col className="col-lg-6 col-6" style={{ justifyContent: "end",borderRight: "0.5px solid #146D69", display: "flex", alignItems: "center" }}>
-                        <p className="experience_text">Birthdays, Showers & more</p>
+                        <p className="experience_text text_size_14">Birthdays, Showers & more</p>
                         </Col>
                         <Col className="col-lg-6 col-6" style={{borderLeft: "0.5px solid #146D69",padding:"unset" }} >
 
@@ -89,7 +94,7 @@ class AmenitiesComponent extends Component {
                         </Col>
 
                         <Col className="col-lg-6 col-6" style={{ borderLeft: "0.5px solid #146D69", display: "flex", alignItems: "center" }}>
-                        <p className="experience_text">Extravagant occasions</p>
+                        <p className="experience_text text_size_14">Extravagant occasions</p>
                         </Col>
 
 
