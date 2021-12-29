@@ -72,7 +72,7 @@ class AmenitiesComponent extends Component {
                         </Col>
 
                         
-                        <Col className="col-lg-6 col-6" style={{ justifyContent: "end",borderRight: "0.5px solid #146D69", display: "flex", alignItems: "center" }}>
+                        <Col className="col-lg-6 col-6" style={{ justifyContent: "flex-end",borderRight: "0.5px solid #146D69", display: "flex", alignItems: "center" }}>
                         <p className="experience_text text_size_14">Birthdays, Showers & more</p>
                         </Col>
                         <Col className="col-lg-6 col-6" style={{borderLeft: "0.5px solid #146D69",padding:"unset" }} >
