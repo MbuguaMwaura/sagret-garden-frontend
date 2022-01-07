@@ -1,0 +1,5 @@
+@media screen and (min-width: 576px) {
+  .banner_image{
+    max-height: 800px !important;
+  }
+}
