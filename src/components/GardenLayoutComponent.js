@@ -13,8 +13,7 @@ class GardenLayoutComponent extends Component {
 
                 <div style={{ backgroundColor: "#2a4c46" , paddingBottom:"30px"}} >
 
-
-                    <div style={{ margin: "auto", maxWidth:"900px" }} >
+                <div className="gone_on_largest" style={{ margin: "auto", maxWidth:"900px" }} >
                         <div style={{ margin: "auto 5vw"}}>
                             <Row style={{ justifyContent: "space-between" }}>
 
@@ -75,10 +74,70 @@ class GardenLayoutComponent extends Component {
                         </div>
 
                     </div>
+                    <div className="largest_only" style={{ margin: "auto", maxWidth:"900px" }} >
+                        <div style={{ margin: "auto 20px"}}>
+                            <Row style={{ justifyContent: "space-between" }}>
+                            <Col className="col-4" style={{ textAlign: "initial" }}>
+
+                                <Row style={{ marginTop: "24px" ,marginRight:"20px" }}>
+                                    <p style={{ marginTop: "10px", width: "100%", textAlign: "start", fontFamily: "Optima", color: "#ffffff", fontSize: "30px", fontWeight: "bold" }}>
+                                    Garden Layout
+                                    </p>
+                                    <div>
+                                        <p className="layout_title text_size_14">
+                                            GARDEN A
+                                        </p>
+                                        <p className="layout_description text_size_11">
+                                        Our most popular garden with a capacity of up to 200 people. It is hired out at a rate of Ksh.35,000 per day for private events and Ksh.50,000 for public events.
+                                        </p>
+                                    </div>
+                                    <div >
+                                        <p className="layout_title text_size_14">
+                                            GARDEN B
+                                        </p>
+                                        <p className="layout_description text_size_11">
+                                        Our most floral garden that comfortably seats 100 people. It is hired out at ash. 20,000 per day for private events and Ksh.30,000 for public events
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p className="layout_title text_size_14">
+                                            GARDEN C
+                                        </p>
+                                        <p className="layout_description text_size_11">
+                                        The largest garden with a capacity of up to 500 people.  It is hired out at Ksh.60,000 per day for private events and Ksh.80,000 for public events.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p className="layout_title text_size_14">
+                                            GARDEN D
+                                        </p>
+                                        <p className="layout_description text_size_11">
+                                        The most intimate garden that accommodates up to 60 people. It is hired out at Ksh. 20,000 per day for private events and Ksh. 30,000 for public events.
+                                        </p>
+                                    </div>
+
+                                    <a href="tel:+254715398758" className="explore_button">Book Now</a>
+
+                                </Row>
+
+
+                                
+                               
+                            </Col>
+                            
+                            <Col className="col-8" style={{ margin: "auto"}}>
+                                <Image src="garden_layout/garden_layout.png" style={{ width: "inherit"}} />
+
+                            </Col>
+
+                        </Row>
+                        </div>
+
+                    </div>
                 </div>
 
                 <div className="large_container" style={{display: "flex",flexDirection: "column"}}>
-                    <p style={{ margin: "16px auto", width: "100%", textAlign: "center", fontFamily: "Optima", color: "#1c6a5c", fontSize: "20px", fontWeight: "bold" }}>
+                    <p style={{ margin: "16px auto", width: "100%", textAlign: "center", fontFamily: "Optima", color: "#1c6a5c", fontSize: "30px", fontWeight: "bold" }}>
                         Where are we?
                     </p>
                     <iframe

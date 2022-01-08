@@ -47,4 +47,10 @@
     margin:5px 50px 5px 0px !important;
     text-align: start !important;
   }
+  .largest_only{
+    display: block !important;
+  }
+  .gone_on_largest{
+    display: none !important;
+  }
 }
