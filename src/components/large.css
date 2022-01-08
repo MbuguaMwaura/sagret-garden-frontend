@@ -2,4 +2,49 @@
   .banner_image{
     max-height: 800px !important;
   }
+
+  .text_large_40{
+    font-size: 40px !important;
+  }
+  .our_gardens_container{
+    background-color: unset!important;
+  
+  }
+  .tidbits{
+    margin:5px 60px 5px 0px !important
+  }
+
+  .tidbits_title{
+    text-align: start !important;
+  }
+  .tidbits_text{
+    margin:5px 10px 5px 0px !important;
+    text-align: start !important;
+    
+  }
+  #blooming_title{
+    font-size: 30px !important;
+    text-align: end !important; 
+  }
+  
+}
+
+@media screen and (min-width: 1000px) {
+  .about_us_container{
+    height: 300px !important;
+    padding: 70px 30px 20px 30px !important;
+  }
+  .our_gardens_container{
+    background-color: unset!important;
+    margin-top: -110px;
+  }
+
+  .our_gardens_image{
+    margin: auto auto  auto 20px !important;
+  }
+
+  .tidbits_text{
+    margin:5px 50px 5px 0px !important;
+    text-align: start !important;
+  }
 }

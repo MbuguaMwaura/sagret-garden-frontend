@@ -14,7 +14,7 @@ class AboutComponent extends Component {
 
                 <Row>
                     <Col className="col-sm-6 col-12">
-                        <p style={{ fontFamily: "Optima", color: "#FFFFFF", fontSize: "20px", textAlign: "center", fontWeight: "bold" }}>
+                        <p id="blooming_title">
                             A Blooming Treasure
                         </p>
                     </Col>
@@ -46,7 +46,7 @@ class AboutComponent extends Component {
 
                  <Row style={{ margin: "unset", padding:"unset"}}>
                     <Col className="col-sm-6 col-12 our_gardens_container" >
-                        <p style={{ fontFamily: "Optima", color: "#FFFFFF", fontSize: "20px", textAlign: "center", fontWeight: "bold" }}>
+                        <p className="hidden_on_large" style={{ fontFamily: "Optima", color: "#FFFFFF", fontSize: "20px", textAlign: "center", fontWeight: "bold" }}>
                             Our Gardens
                         
                         </p>
@@ -56,9 +56,10 @@ class AboutComponent extends Component {
                     <Col className="col-sm-6 col-12 amenities_container" style={{margin:"auto" }}>
                         <Row style={{marginTop:"10px" }}>
                             <Col className="col-12" >
+                            <p className="medium_green_color text_large_40 tidbits_title" style={{margin:"5px 0" ,fontFamily:"Optima",fontWeight:"bold"}}>Garden Tidbits</p>
                             {garden.map((amenity,i) => (
-                                <div style={{display:"flex" ,margin:"5px 0" }} key={i}>
-                                    <p className="text_size_12" style={{margin:"5px 70px" ,fontFamily:"Nunito",textAlign:"center", width:"100%"}}>
+                                <div className="tidbits" style={{display:"flex"  }} key={i}>
+                                    <p className="text_size_14 dark_green_color tidbits_text" style={{fontFamily:"Nunito", fontWeight:"bold"}}>
                                             {amenity.text}
                                     </p>
                                     
