@@ -126,7 +126,7 @@ class GardenLayoutComponent extends Component {
                             </Col>
                             
                             <Col className="col-8" style={{ margin: "auto"}}>
-                                <Image src="garden_layout/garden_layout.png" style={{ width: "inherit"}} />
+                                <Image src="garden_layout.png" style={{ width: "inherit"}} />
 
                             </Col>
 
