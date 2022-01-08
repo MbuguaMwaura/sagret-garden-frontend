@@ -326,11 +326,8 @@
 
 .inclusive_title{
   width: fit-content;
-  padding:  8px 20px;
-  box-shadow: 7px 7px 11px 0 rgba(0, 0, 0, 0.16);
-  background-color: #146D69;
   font-family: Optima;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: bold;
   color: #ffffff;
   border-radius: 4px;
@@ -350,6 +347,7 @@
   object-fit: cover;
   margin-top: 10px;
   box-shadow: 7px 7px 11px 0 rgba(0, 0, 0, 0.16);
+  z-index: 1;
 }
 
 .experience_text{
@@ -364,7 +362,7 @@
 
 .indicator{
   width: 66px;
-  height: 2px;
+  height: 3px;
   background-color: rgb(20, 109, 105);
 }
 
@@ -455,7 +453,7 @@ a{
   font-weight: bold;
 }
 .largest_only{
-  display: none ;
+  display: none !important ;
 }
 .gone_on_largest{
   display: block ;
