@@ -16,6 +16,14 @@
   position: relative;
 }
 
+.medium_green_color{
+  color : #1c6a5c;
+}
+.dark_green_color{
+  color : #2a4c46;
+}
+
+
 .center {
   position: absolute;
   top: 50%;
@@ -50,7 +58,7 @@
 }
 .explore_button{
   width: fit-content;
-  padding:  8px 20px;
+  padding:  10px 40px;
   box-shadow: 7px 7px 11px 0 rgba(0, 0, 0, 0.16);
   background-color: #146D69;
   font-family: Optima;
@@ -305,6 +313,7 @@
   color: #ffffff; 
   font-size: 14px;
   margin-bottom: 5px;
+  font-weight: bold;
 }
 
 .layout_description{
@@ -312,16 +321,13 @@
   color: #ffffff;
   font-size: 10px;
   font-weight: 600;
-  line-height: 18px;
+  line-height: 20px;
 }
 
 .inclusive_title{
   width: fit-content;
-  padding:  8px 20px;
-  box-shadow: 7px 7px 11px 0 rgba(0, 0, 0, 0.16);
-  background-color: #146D69;
   font-family: Optima;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: bold;
   color: #ffffff;
   border-radius: 4px;
@@ -341,6 +347,7 @@
   object-fit: cover;
   margin-top: 10px;
   box-shadow: 7px 7px 11px 0 rgba(0, 0, 0, 0.16);
+  z-index: 1;
 }
 
 .experience_text{
@@ -355,7 +362,7 @@
 
 .indicator{
   width: 66px;
-  height: 2px;
+  height: 3px;
   background-color: rgb(20, 109, 105);
 }
 
@@ -383,11 +390,11 @@
 }
 
 .rounded_225{
-  height: 300px;
+  height: 500px;
 }
 
 .rounded_110{
-  height: 200px;
+  height: 300px;
 }
 
 
@@ -416,4 +423,35 @@ a{
 }
 .text_size_12{
   font-size: 14px;
+}
+.banner_image{
+  max-height: 350px;
+}
+
+.text_large_40{
+  font-size: 30px;
+}
+.hidden_on_large{
+  display: block;
+}
+.tidbits{
+  margin: 5px auto
+}
+.tidbits_title{
+  text-align: center;
+}
+.tidbits_text{
+  margin:5px 20px;
+  text-align: center;
+  width : 100%;
+}
+#blooming_title{
+  font-family: "Optima"; 
+  color: #FFFFFF;
+  font-size: 20px;
+  text-align: center; 
+  font-weight: bold;
+}
+.largest_only{
+  display: none !important ;
 }

@@ -1,0 +1,81 @@
+@media screen and (min-width: 576px) {
+  .banner_image{
+    max-height: 800px !important;
+  }
+
+  .text_large_40{
+    font-size: 40px !important;
+  }
+  .our_gardens_container{
+    background-color: unset!important;
+  
+  }
+  .tidbits{
+    margin:5px 60px 5px 0px !important
+  }
+
+  .tidbits_title{
+    text-align: start !important;
+  }
+  .tidbits_text{
+    margin:5px 10px 5px 0px !important;
+    text-align: start !important;
+    
+  }
+  #blooming_title{
+    font-size: 30px !important;
+    text-align: end !important; 
+  }
+  .inclusive_title{
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .about_us_container{
+    height: 300px !important;
+    padding: 70px 30px 20px 30px !important;
+  }
+  .our_gardens_container{
+    background-color: unset!important;
+    margin-top: -110px;
+  }
+
+  .our_gardens_image{
+    margin: auto auto  auto 20px !important;
+  }
+
+  .tidbits_text{
+    margin:5px 50px 5px 0px !important;
+    text-align: start !important;
+  }
+  .largest_only{
+    display: block !important;
+  }
+  .gone_on_largest{
+    display: none !important;
+  }
+  .amen_container_left{
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    flex-direction: column !important;
+  }
+  .amen_container_right{
+    display: flex!important;
+    justify-content: start!important;
+    align-items: center!important;
+    flex-direction: column !important;
+    margin-bottom: 40px;
+  }
+  .indicator{
+    width: 100px;
+    height: 3px;
+    background-color: rgb(20, 109, 105);
+    transform: rotate(90deg);
+  }
+  .experience_text{
+    margin: 60px 0px;
+    max-width: unset !important;
+  }
+}

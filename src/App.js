@@ -5,6 +5,7 @@ import BannerComponent from './components/BannerComponent';
 import AboutComponent from './components/AboutComponent'
 import GardenLayoutComponent from './components/GardenLayoutComponent'
 import AmenitiesComponent from './components/AmenitiesComponent'
+import AmenitiesComponentSmall from './components/AmenitiesComponentSmall'
 import GalleryComponent from './components/GalleryComponent'
 import FooterComponent from './components/FooterComponent'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -128,7 +129,14 @@ function App() {
 
         </div>
         <div id="Amenities" ref={amenitiesRef} >
+
+          <div className="largest_only">
           <AmenitiesComponent />
+          </div>
+          <div className="gone_on_largest">
+          <AmenitiesComponentSmall />
+          </div>
+         
 
         </div>
 

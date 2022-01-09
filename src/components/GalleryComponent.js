@@ -11,7 +11,7 @@ export default () => {
         <React.Fragment>
             <div className="gallery-container large_container">
 
-                <p style={{ fontFamily: "Optima", color: "#2a4c46", fontSize: "20px", fontWeight: "bold", textAlign: "center" }}>
+                <p style={{ fontFamily: "Optima", color: "#2a4c46", fontSize: "30px", fontWeight: "bold", textAlign: "center" }}>
                     Garden Views
                 </p>
 
