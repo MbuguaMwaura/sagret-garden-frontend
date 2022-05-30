@@ -5,7 +5,7 @@ const garden = [
     },
     {
         icon:"our_garden/picnic.png",
-        text:"Our charges for intimate gatherings of less than 50 people are Ksh. 300 per person."
+        text:"Our charges for intimate gatherings are ksh. 400 for adults and ksh. 300 for children under 10 years."
     },
     {
         icon:"our_garden/people.png",
