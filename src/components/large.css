@@ -11,27 +11,32 @@
   
   }
   .tidbits{
-    margin:5px 60px 5px 0px !important
+    margin:5px 5px 5px 0px !important
   }
 
   .tidbits_title{
     text-align: start !important;
   }
   .tidbits_text{
-    margin:5px 10px 5px 0px !important;
+    margin:5px 5px 5px 0px !important;
     text-align: start !important;
+    color: #2A4C46;
+    font-weight: 700
     
   }
   #blooming_title{
     font-size: 30px !important;
-    text-align: end !important; 
+    text-align: start !important; 
+    font-weight: 700 !important;
+    margin-left: 30px !important;
+
   }
   .inclusive_title{
     font-size: 30px;
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
   .about_us_container{
     height: 300px !important;
     padding: 70px 30px 20px 30px !important;
@@ -42,12 +47,15 @@
   }
 
   .our_gardens_image{
-    margin: auto auto  auto 20px !important;
+    filter: drop-shadow(7px 7px 11px rgba(0, 0, 0, 0.4));
   }
 
   .tidbits_text{
-    margin:5px 50px 5px 0px !important;
+    margin:5px 5px 5px 0px !important;
     text-align: start !important;
+    color: #2A4C46;
+    font-weight: 700
+    
   }
   .largest_only{
     display: block !important;

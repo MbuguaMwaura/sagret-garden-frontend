@@ -105,7 +105,7 @@ class BookModal extends Component {
                             <p style={{ color: "#2a4c46", fontSize: "30px", fontFamily: "'Kurale', serif" }}>Sagret Gardens</p>
 
                             <div style={{ textAlign: "initial", width: "150px", margin: "0 auto" }}>
-                                <p style={{ color: "#2a4c46", fontSize: "16px", fontFamily: "'Optima', serif", fontWeight: "bold" }}>
+                                <p style={{ color: "#2a4c46", fontSize: "16px", fontFamily: "'Nunito', serif", fontWeight: "bold" }}>
                                     Why Our Gardens?
                                     </p>
                                 <p style={{ color: "#2a4c46", fontSize: "14px", fontFamily: "'Nunito', serif", fontWeight: "normal" }}>
@@ -126,7 +126,7 @@ class BookModal extends Component {
 
                         <Col className="col-md-7 form_background" style={{ padding: "20px" }}>
                             <div style={{ display: "flex", gap: "20px" }}>
-                                <p style={{ color: "#2a4c46", fontSize: "24px", fontFamily: "'Optima', serif", fontWeight: "bold" }}>Hello! Please tell us a little bit about your event.</p>
+                                <p style={{ color: "#2a4c46", fontSize: "24px", fontFamily: "'Nunito', serif", fontWeight: "bold" }}>Hello! Please tell us a little bit about your event.</p>
                                 <Image src="close_modal_green.png" onClick={() => this.props.sendDataToParent("hide")} style={{ height: "18px", margin: "15px auto" }} />
                             </div>
 

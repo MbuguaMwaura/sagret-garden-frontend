@@ -13,11 +13,11 @@ class GardenLayoutComponent extends Component {
 
                 <div style={{ backgroundColor: "#2a4c46" , paddingBottom:"30px"}} >
 
-                <div className="gone_on_largest" style={{ margin: "auto", maxWidth:"900px" }} >
+                <div className="gone_on_largest" style={{ margin: "auto", maxWidth:"1040px" }} >
                         <div style={{ margin: "auto 5vw"}}>
                             <Row style={{ justifyContent: "space-between" }}>
 
-                            <p style={{ marginTop: "10px", width: "100%", textAlign: "center", fontFamily: "Optima", color: "#ffffff", fontSize: "20px", fontWeight: "bold" }}>
+                            <p style={{ marginTop: "10px", width: "100%", textAlign: "center", fontFamily: "Nunito", color: "#ffffff", fontSize: "20px", fontWeight: "bold" }}>
                                 Garden Layout
                             </p>
                             <Col className="col-12">
@@ -74,13 +74,13 @@ class GardenLayoutComponent extends Component {
                         </div>
 
                     </div>
-                    <div className="largest_only" style={{ margin: "auto", maxWidth:"900px" }} >
+                    <div className="largest_only" style={{ margin: "auto", maxWidth:"1040px" }} >
                         <div style={{ margin: "auto 20px"}}>
                             <Row style={{ justifyContent: "space-between" }}>
                             <Col className="col-4" style={{ textAlign: "initial" }}>
 
                                 <Row style={{ marginTop: "24px" ,marginRight:"20px" }}>
-                                    <p style={{ marginTop: "10px", width: "100%", textAlign: "start", fontFamily: "Optima", color: "#ffffff", fontSize: "30px", fontWeight: "bold" }}>
+                                    <p style={{ marginTop: "10px", width: "100%", textAlign: "start", fontFamily: "Nunito", color: "#ffffff", fontSize: "30px", fontWeight: "bold" }}>
                                     Garden Layout
                                     </p>
                                     <div>
@@ -137,7 +137,7 @@ class GardenLayoutComponent extends Component {
                 </div>
 
                 <div className="large_container" style={{display: "flex",flexDirection: "column"}}>
-                    <p style={{ margin: "16px auto", width: "100%", textAlign: "center", fontFamily: "Optima", color: "#1c6a5c", fontSize: "30px", fontWeight: "bold" }}>
+                    <p style={{ margin: "16px auto", width: "100%", textAlign: "center", fontFamily: "Nunito", color: "#1c6a5c", fontSize: "30px", fontWeight: "bold" }}>
                         Where are we?
                     </p>
                     <iframe
@@ -146,7 +146,7 @@ class GardenLayoutComponent extends Component {
                         src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCNsmgorp06P8qYILkWucOMFerRWAhguRQ&q=Sagret+Gardens,Kiambu+Kenya&zoom=16">
                         </iframe>
                         
-                    <p className="text_size_11" style={{ textAlign: "left", fontFamily: "Nunito", color: "#2a4c46", fontWeight: "bold",margin:"24px auto",lineHeight:"20px",maxWidth:"420px",padding:"0 20px" }}>
+                    <p className="text_size_12" style={{ textAlign: "left", fontFamily: "Nunito", color: "#2a4c46", fontWeight: "bold",margin:"24px auto",lineHeight:"20px",maxWidth:"900px" }}>
                     We are strategically located along Kiambu Road, a 1 minute drive or 3 minute walk behind Quickmart in Thindigua. This place is easily accessible to all. We also provide ample parking right next to the garden.
                     </p>
                 </div>

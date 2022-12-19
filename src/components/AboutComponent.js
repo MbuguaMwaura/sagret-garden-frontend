@@ -22,7 +22,7 @@ class AboutComponent extends Component {
                     <Col className="col-sm-6 col-12">
                         <Row>
                             <Col className="col-12">
-                                <p className="text_size_12" style={{ fontFamily: "Nunito", color: "#FFFFFF",textAlign:"initial",lineHeight: "24px",fontWeight: "bold"}}>
+                                <p className="text_size_12" style={{ fontFamily: "Nunito", color: "#FFFFFF",textAlign:"initial",lineHeight: "30px",fontWeight: "bold"}}>
                                 Sagret gardens is a beautiful botanical garden located on 
                                  Kiambu Road. 
                                  It is made up of 4 cascading gardens each surrounded by 
@@ -46,20 +46,20 @@ class AboutComponent extends Component {
 
                  <Row style={{ margin: "unset", padding:"unset"}}>
                     <Col className="col-sm-6 col-12 our_gardens_container" >
-                        <p className="hidden_on_large" style={{ fontFamily: "Optima", color: "#FFFFFF", fontSize: "20px", textAlign: "center", fontWeight: "bold" }}>
+                        <p className="hidden_on_large" style={{ fontFamily: "Nunito", color: "#FFFFFF", fontSize: "20px", textAlign: "center", fontWeight: "bold" }}>
                             Our Gardens
                         
                         </p>
-                        <Image className="our_gardens_image" src="our_gardens_image.png" style={{ margin: "auto",width:"-webkit-fill-available" }} /> 
+                        <Image className="our_gardens_image" src="our_gardens_image.png" style={{ height: "490px",width:"435px",objectFit:"cover",borderRadius:"25px" }} /> 
                     </Col>
 
-                    <Col className="col-sm-6 col-12 amenities_container" style={{margin:"auto" }}>
+                    <Col className="col-sm-6 col-12 amenities_container" >
                         <Row style={{marginTop:"10px" }}>
                             <Col className="col-12" >
-                            <p className="medium_green_color text_large_40 tidbits_title" style={{margin:"5px 0" ,fontFamily:"Optima",fontWeight:"bold"}}>Garden Tidbits</p>
+                            <p className="medium_green_color text_large_40 tidbits_title" style={{margin:"5px 0" ,fontFamily:"Nunito",fontWeight:"bold"}}>Garden Tidbits</p>
                             {garden.map((amenity,i) => (
                                 <div className="tidbits" style={{display:"flex"  }} key={i}>
-                                    <p className="text_size_14 dark_green_color tidbits_text" style={{fontFamily:"Nunito", fontWeight:"bold"}}>
+                                    <p className="text_size_12 dark_green_color tidbits_text" style={{fontFamily:"Nunito", fontWeight:"bold"}}>
                                             {amenity.text}
                                     </p>
                                     

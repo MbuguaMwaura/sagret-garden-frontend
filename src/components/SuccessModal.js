@@ -37,7 +37,7 @@ class SuccessModal extends Component {
                         <Image src="close_modal_white.png" onClick={() => this.props.sendDataToParent("hide")} style={{ height: "18px", margin: "15px 15px" }} />
                     </div>
 
-                    <p style={{ color: "#ffffff", margin: "20px,50px", fontSize: "14px", fontFamily: "'Optima', serif", fontWeight: "bold" }}>Your inquiry has been successfully submitted. <br />You will also receive an email with all the details you have provided. </p>
+                    <p style={{ color: "#ffffff", margin: "20px,50px", fontSize: "14px", fontFamily: "'Nunito', serif", fontWeight: "bold" }}>Your inquiry has been successfully submitted. <br />You will also receive an email with all the details you have provided. </p>
                 </div>
 
 

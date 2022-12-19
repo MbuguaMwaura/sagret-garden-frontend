@@ -26,48 +26,38 @@ class BannerComponent extends Component {
 
                     <div style={{ padding: "2vw 7vw" }}>
                         <div style={{ textAlign: "initial" }}>
-                            <p className="text_size_14" style={{ fontFamily: "Optima", color: "#ffffff", fontWeight: "bold", marginBottom: "4px" }}>
-                                We would love to hear from you!
-                                </p>
-                            <p className="text_size_11" style={{ fontFamily: "Nunito", color: "#ffffff"}}>
-                                To get in touch, please contact us at:
-                                </p>
+                            <p className="text_size_14" style={{ fontFamily: "Nunito", color: "#ffffff", fontWeight: "bold", marginBottom: "4px", fontSize: "35px" }}>
+                                Our Contacts
+                            </p>
+                            <p className="text_size_11" style={{ fontFamily: "Nunito", color: "#ffffff" ,fontWeight: "400"}}>
+                                We would love to hear from you. To get in touch, please follow the links below
+                            </p>
                         </div>
 
-                        <Row style={{ textAlign: "initial" }}>
-                            <Col className="col-6">
+                        <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-around" }}>
+                            {icons.map((icon, i) => (
 
-                                {icons.map((icon, i) => (
+                                <a href={icon.link}  >
+                                    <div key={i}>
+                                        <Image src={icon.icon} style={{ width: "50px", height: "auto" }} />
 
-                                    <a href={icon.link}  >
-                                    <div style={{ display: "flex", gap: "5px", margin: "5px auto" }} key={i}>
-                                        <Image src={icon.icon} style={{ width: "30px", height: "auto" }} />
-                                        <p className="text_size_11" style={{ margin: "auto 0", fontFamily: "Nunito", color: "#ffffff" }}>
-                                            {icon.text}
-                                        </p>
                                     </div>
-                                    </a>
+                                </a>
 
-                                ))
-                                }
+                            ))
+                            }
+                            {socialIcons.map((icon, i) => (
+                                <a href={icon.link} target="_blank">
+                                    <div key={i}>
+                                        <Image key={i} src={icon.icon} style={{ width: "50px", height: "auto" }} />
+                                    </div>
+                                </a>
 
-                            </Col>
-                            <Col className="col-6">
-                                <div style={{ display: "flex", gap: "5px", justifyContent: "center", marginTop: "5px", marginBottom: "20px", marginLeft: "20px", flexDirection: "column" }} >
-                                    {socialIcons.map((icon, i) => (
-                                        <a href={icon.link} target="_blank">
-                                            <div style={{ display: "flex", gap: "5px" }} key={i}>
-                                                <Image key={i} src={icon.icon} style={{ width: "30px", height: "auto" }} />
-                                                <p className="text_size_11" style={{ margin: "auto 0", fontFamily: "Nunito", color: "#ffffff" }}>
-                                                    Sagret Gardens
-                                                </p>
-                                            </div>
-                                        </a>
+                            ))}
 
-                                    ))}
-                                </div>
-                            </Col>
-                        </Row>
+                        </div>
+
+
 
                     </div>
 

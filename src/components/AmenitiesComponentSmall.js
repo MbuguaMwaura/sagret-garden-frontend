@@ -11,7 +11,7 @@ class AmenitiesComponent extends Component {
 
 
                 <div style={{ backgroundColor: "#2a4c46"}}>
-                    <p style={{ paddingTop: "24px", paddingBottom: "24px", textAlign: "center", fontFamily: "Optima", color: "#ffffff", fontSize: "20px", fontWeight: "bold" }}>
+                    <p style={{ paddingTop: "24px", paddingBottom: "24px", textAlign: "center", fontFamily: "Nunito", color: "#ffffff", fontSize: "20px", fontWeight: "bold" }}>
                         The Sagret Garden Amenities
                     </p>
                 </div>
@@ -60,7 +60,7 @@ class AmenitiesComponent extends Component {
                         <Col className="col-lg-6 col-6" style={{borderRight: "0.5px solid #146D69",padding:"unset" }} >
                             <div className="amen_container_left">
                             
-                            <Image className="rounded_image" src="gallery/pic_20.jpg" />
+                            <Image className="rounded_image" src="gallery/pic_17.jpg" />
                             <div className="indicator"></div>
                             </div>
                       
@@ -79,7 +79,7 @@ class AmenitiesComponent extends Component {
 
                         <div className="amen_container_right">
                         <div className="indicator"></div>
-                            <Image className="rounded_image" src="gallery/pic_4.jpg" />
+                            <Image className="rounded_image" src="gallery/pic_15.jpg" />
                     
                             </div>
                         </Col>
@@ -88,7 +88,7 @@ class AmenitiesComponent extends Component {
 
                        <div className="amen_container_left">
                             
-                            <Image className="rounded_image" src="gallery/pic_21.jpg" />
+                            <Image className="rounded_image" src="gallery/pic_13.jpg" />
                             <div className="indicator"></div>
                             </div>
                         </Col>

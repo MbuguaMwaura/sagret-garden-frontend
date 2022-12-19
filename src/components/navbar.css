@@ -34,13 +34,13 @@
 
 .title {
   font-family: 'Kurale', serif;
-  font-size: 24px;
+  font-size: 40px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   letter-spacing: normal;
   text-align: center;
-  color: #ffffff;
+  color: #2A4C46;
 }
 
 .about_us_container{
@@ -49,7 +49,7 @@
   box-shadow: 7px 7px 11px 0 rgb(0 0 0 / 20%);
   margin:15px auto;
   padding: 20px 30px;
-  max-width: 900px;
+  max-width: 1040px;
   /* justify-content: space-between; */
 }
 .padding{
@@ -61,7 +61,7 @@
   padding:  10px 40px;
   box-shadow: 7px 7px 11px 0 rgba(0, 0, 0, 0.16);
   background-color: #146D69;
-  font-family: Optima;
+  font-family: Nunito;
   font-size: 14px;
   font-weight: bold;
   color: #ffffff;
@@ -172,6 +172,10 @@
     font-size: 14px !important;
   }
 
+  .text_size_16{
+    font-size: 16px !important;
+  }
+
   .text_size_12{
     font-size: 12px !important;
   }
@@ -220,7 +224,8 @@
   left: 0;
   right: 0;
   z-index: 10;
-  background-color: #1C6A5C;
+  background-color: white;
+  height: 85px;
 }
 
 .header {
@@ -234,7 +239,7 @@
   justify-content: center;
 
   margin: 0 auto;
-  max-width:900px;
+  max-width:1040px;
 }
 
 
@@ -289,7 +294,7 @@
 
 .main_container{
   margin:15px auto;
-  max-width: 900px;
+  max-width: 1040px;
   padding: 0 16px;
 }
 
@@ -305,11 +310,11 @@
 }
 .our_gardens_image{
   margin: auto auto 30px auto;
-  box-shadow: 7px 7px 11px 0 rgb(0 0 0 / 20%);
+  filter: drop-shadow(7px 7px 11px rgba(0, 0, 0, 0.4));
 }
 
 .layout_title{
-  font-family: "Optima";
+  font-family: "Nunito";
   color: #ffffff; 
   font-size: 14px;
   margin-bottom: 5px;
@@ -320,13 +325,13 @@
   font-family: "Nunito"; 
   color: #ffffff;
   font-size: 10px;
-  font-weight: 600;
+  font-weight: 100;
   line-height: 20px;
 }
 
 .inclusive_title{
   width: fit-content;
-  font-family: Optima;
+  font-family: Nunito;
   font-size: 20px;
   font-weight: bold;
   color: #ffffff;
@@ -341,9 +346,9 @@
 }
 
 .rounded_image{
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  border-radius: 25px;
+  width: 328px;
+  height: 328px;
   object-fit: cover;
   margin-top: 10px;
   box-shadow: 7px 7px 11px 0 rgba(0, 0, 0, 0.16);
@@ -351,13 +356,14 @@
 }
 
 .experience_text{
-  font-family: "Optima";
+  font-family: "Nunito";
   color: white;
-  font-style: italic;
-  font-size: 14px;
+  font-weight: 700;
+  font-size: 16px;
   text-align: start;
   margin-top: 10px;
   max-width: 140px;
+  text-transform: uppercase;
 }
 
 .indicator{
@@ -446,10 +452,10 @@ a{
   width : 100%;
 }
 #blooming_title{
-  font-family: "Optima"; 
+  font-family: "Nunito"; 
   color: #FFFFFF;
   font-size: 20px;
-  text-align: center; 
+  text-align: start !important; 
   font-weight: bold;
 }
 .largest_only{

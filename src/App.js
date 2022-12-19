@@ -92,12 +92,19 @@ function App() {
 
           <div className="mobile_menu header_mobile" ref={headerRef} >
             <div style={{ display: "flex", justifyContent: "space-between"}}>
-              <Image src="sagret_garden_logo.png" style={{ height: "40px", width: "40px", margin: "10px 20px" }} />
+              <Image src="sagret_garden_logo.png" style={{ height: "80px", width: "80px" }} />
               <div className="center title">Sagret Gardens</div>
-        
-                <a style={{display:"contents"}} href="tel:+254715398758">
-                  <Image src="phone-icon.png" style={{ margin: "auto 22px", height:"22px" }} />
+
+              <div style={{display:"block",marginTop:"10px"}} >
+                <a style={{ display: "contents"}} href="tel:+254715398758">
+                  <Image src="phone-icon.png" style={{ margin: "22px 22px", height:"22px" }} />
                 </a>
+                <a href="mailto: sagretgardens@gmail.com">
+                  <Image src="email_icon.png" style={{ margin: "22px 22px", height:"22px" }} />
+                </a>
+              </div>
+                
+                
                 
             </div>
                  
